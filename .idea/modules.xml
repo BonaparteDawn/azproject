@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/azparent.iml" filepath="$PROJECT_DIR$/azparent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sysconfig_api/sysconfig_api.iml" filepath="$PROJECT_DIR$/sysconfig_api/sysconfig_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sysconfig_dao/sysconfig_dao.iml" filepath="$PROJECT_DIR$/sysconfig_dao/sysconfig_dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sysconfig_domain/sysconfig_domain.iml" filepath="$PROJECT_DIR$/sysconfig_domain/sysconfig_domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sysconfig_parent/sysconfig_parent.iml" filepath="$PROJECT_DIR$/sysconfig_parent/sysconfig_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sysconfig_provider/sysconfig_provider.iml" filepath="$PROJECT_DIR$/sysconfig_provider/sysconfig_provider.iml" />
+    </modules>
+  </component>
+</project>
