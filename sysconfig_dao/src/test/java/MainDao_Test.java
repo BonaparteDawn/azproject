@@ -7,7 +7,7 @@ import service.Temp;
  */
 public class MainDao_Test {
     public static void main(String[] args) {
-        ApplicationContext spring  = new ClassPathXmlApplicationContext(new String[]{"spring.xml","spring-mybatis.xml"});
+        ApplicationContext spring  = new ClassPathXmlApplicationContext("classpath*:spring.xml");
         Temp temp = (Temp) spring.getBean("temp");
         temp.printAll();
     }

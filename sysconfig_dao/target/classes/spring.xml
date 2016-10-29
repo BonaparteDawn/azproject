@@ -7,4 +7,5 @@
     <context:component-scan base-package="/**"/>
     <!-- 加载配置文件 -->
     <!--<context:property-placeholder location="dbconfig.properties"/>-->
+    <import resource="classpath:spring-mybatis.xml"></import>
 </beans>
