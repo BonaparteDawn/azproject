@@ -1,97 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9531341-aefe-4ee1-8d3a-4dbaf6c904d0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_3_2_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sysconfig_dao/src/main/java/mapper/MenuMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sysconfig_domain/src/main/java/entity/Menu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sysconfig_domain/src/main/java/entity/MenuExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sysconfig_domain/src/main/java/vo/MenuVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sysconfig_provider/src/test/java/sysconfig/BaseTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sysconfig_provider/src/test/java/sysconfig/SysconfigServiceTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/src/main/java/bean/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/src/main/java/bean/UserExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/src/main/java/dao/UserMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/src/main/java/service/Temp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/classes/bean/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/classes/bean/UserExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/classes/bean/UserExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/classes/bean/UserExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/classes/bean/UserExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/classes/bean/UserMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/classes/dao/UserMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/classes/service/Temp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_domain/target/classes/entity/AZ_Object.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_domain/target/classes/entity/Sysconfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/src/main/java/dao/Temp1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/src/main/resources/dbconfig.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/src/main/resources/spring-mybatis.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/src/test/java/dao/MainDao_Test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/target/classes/dao/Temp1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/target/classes/dbconfig.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/target/classes/spring-mybatis.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/target/surefire-reports/TEST-dao.MainDao_Test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/target/surefire-reports/dao.MainDao_Test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/target/test-classes/dao/MainDao_Test.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sysconfig_dao/src/main/resources/bean/UserMapper.xml" afterPath="$PROJECT_DIR$/sysconfig_dao/src/main/resources/mapper/MenuMapper.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sysconfig_domain/src/main/java/entity/AZ_Object.java" afterPath="$PROJECT_DIR$/sysconfig_domain/src/main/java/vo/AZ_Object.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sysconfig_domain/src/main/java/entity/Sysconfig.java" afterPath="$PROJECT_DIR$/sysconfig_domain/src/main/java/vo/Sysconfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_api/target/classes/sysconfig/SysconfigApi.class" afterPath="$PROJECT_DIR$/sysconfig_api/target/classes/sysconfig/SysconfigApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_api/target/sysconfig_api-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/sysconfig_api/target/sysconfig_api-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/target/sysconfig_dao.jar" afterPath="$PROJECT_DIR$/sysconfig_dao/target/sysconfig_dao.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/target/test-classes/MainDao_Test.class" afterPath="$PROJECT_DIR$/sysconfig_dao/target/test-classes/MainDao_Test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_domain/target/sysconfig_domain-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/sysconfig_domain/target/sysconfig_domain-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_parent/target/sysconfig_parent-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/sysconfig_parent/target/sysconfig_parent-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_provider/target/classes/sysconfig/SysconfigService.class" afterPath="$PROJECT_DIR$/sysconfig_provider/target/classes/sysconfig/SysconfigService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_provider/target/sysconfig_provider-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/sysconfig_provider/target/sysconfig_provider-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="f9531341-aefe-4ee1-8d3a-4dbaf6c904d0" name="Default" comment="新添加菜单操作">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_api/target/classes/sysconfig/SysconfigApi.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_api/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_api/target/sysconfig_api-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/classes/MyBatis-Configuration.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/classes/dbconfig.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/classes/generatorConfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/classes/spring-mybatis.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/classes/spring.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/surefire-reports/MainDao_Test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/surefire-reports/TEST-MainDao_Test.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/sysconfig_dao.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_dao/target/test-classes/MainDao_Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_domain/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_domain/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_domain/target/sysconfig_domain-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_parent/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_parent/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_parent/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_parent/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_parent/target/sysconfig_parent-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_parent/target/test-classes/Run.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/target/classes/spring.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/target/classes/sysconfig/SysconfigService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sysconfig_provider/target/sysconfig_provider-1.0-SNAPSHOT.jar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_api/src/main/java/sysconfig/SysconfigApi.java" afterPath="$PROJECT_DIR$/sysconfig_api/src/main/java/sysconfig/SysconfigApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_api/sysconfig_api.iml" afterPath="$PROJECT_DIR$/sysconfig_api/sysconfig_api.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_api/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/sysconfig_api/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_api/pom.xml" afterPath="$PROJECT_DIR$/sysconfig_api/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/pom.xml" afterPath="$PROJECT_DIR$/sysconfig_dao/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/src/main/resources/dbconfig.properties" afterPath="$PROJECT_DIR$/sysconfig_dao/src/main/resources/dbconfig.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/src/main/resources/generatorConfig.xml" afterPath="$PROJECT_DIR$/sysconfig_dao/src/main/resources/generatorConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/src/main/resources/spring-mybatis.xml" afterPath="$PROJECT_DIR$/sysconfig_dao/src/main/resources/spring-mybatis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/src/main/resources/spring.xml" afterPath="$PROJECT_DIR$/sysconfig_dao/src/main/resources/spring.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/src/test/java/MainDao_Test.java" afterPath="$PROJECT_DIR$/sysconfig_dao/src/test/java/MainDao_Test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/sysconfig_dao.iml" afterPath="$PROJECT_DIR$/sysconfig_dao/sysconfig_dao.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/target/classes/dbconfig.properties" afterPath="$PROJECT_DIR$/sysconfig_dao/target/classes/dbconfig.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/target/classes/generatorConfig.xml" afterPath="$PROJECT_DIR$/sysconfig_dao/target/classes/generatorConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/target/classes/spring-mybatis.xml" afterPath="$PROJECT_DIR$/sysconfig_dao/target/classes/spring-mybatis.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/target/classes/spring.xml" afterPath="$PROJECT_DIR$/sysconfig_dao/target/classes/spring.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/sysconfig_dao/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/sysconfig_dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/sysconfig_dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/target/surefire-reports/MainDao_Test.txt" afterPath="$PROJECT_DIR$/sysconfig_dao/target/surefire-reports/MainDao_Test.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_dao/target/surefire-reports/TEST-MainDao_Test.xml" afterPath="$PROJECT_DIR$/sysconfig_dao/target/surefire-reports/TEST-MainDao_Test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_domain/pom.xml" afterPath="$PROJECT_DIR$/sysconfig_domain/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_domain/sysconfig_domain.iml" afterPath="$PROJECT_DIR$/sysconfig_domain/sysconfig_domain.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_domain/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/sysconfig_domain/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/sysconfig_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/sysconfig_domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_parent/pom.xml" afterPath="$PROJECT_DIR$/sysconfig_parent/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_parent/src/test/java/Run.java" afterPath="$PROJECT_DIR$/sysconfig_parent/src/test/java/Run.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_parent/sysconfig_parent.iml" afterPath="$PROJECT_DIR$/sysconfig_parent/sysconfig_parent.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_parent/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/sysconfig_parent/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_provider/pom.xml" afterPath="$PROJECT_DIR$/sysconfig_provider/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_provider/src/main/java/sysconfig/SysconfigService.java" afterPath="$PROJECT_DIR$/sysconfig_provider/src/main/java/sysconfig/SysconfigService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_provider/src/main/resources/spring.xml" afterPath="$PROJECT_DIR$/sysconfig_provider/src/main/resources/spring.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_provider/sysconfig_provider.iml" afterPath="$PROJECT_DIR$/sysconfig_provider/sysconfig_provider.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_provider/target/classes/spring.xml" afterPath="$PROJECT_DIR$/sysconfig_provider/target/classes/spring.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_provider/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/sysconfig_provider/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/sysconfig_provider/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/sysconfig_provider/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/sysconfig_provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig_provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/sysconfig_provider/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
     </list>
     <ignored path="azparent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -158,8 +114,6 @@
         <option value="$PROJECT_DIR$/sysconfig_domain/src/main/java/vo/Sysconfig.java" />
         <option value="$PROJECT_DIR$/sysconfig_domain/src/main/java/vo/AZ_Object.java" />
         <option value="$PROJECT_DIR$/sysconfig_domain/pom.xml" />
-        <option value="$PROJECT_DIR$/sysconfig_parent/pom.xml" />
-        <option value="$PROJECT_DIR$/sysconfig_dao/pom.xml" />
         <option value="$PROJECT_DIR$/sysconfig_provider/src/test/java/dao/MainDao_Test.java" />
         <option value="$PROJECT_DIR$/sysconfig_provider/pom.xml" />
         <option value="$PROJECT_DIR$/sysconfig_provider/src/main/resources/spring.xml" />
@@ -170,6 +124,10 @@
         <option value="$PROJECT_DIR$/sysconfig_domain/src/main/java/vo/MenuVo.java" />
         <option value="$PROJECT_DIR$/sysconfig_provider/src/main/java/sysconfig/SysconfigService.java" />
         <option value="$PROJECT_DIR$/sysconfig_provider/src/test/java/sysconfig/BaseTest.java" />
+        <option value="$PROJECT_DIR$/sysconfig_dao/src/main/java/mapper/BaseTest.java" />
+        <option value="$PROJECT_DIR$/sysconfig_parent/pom.xml" />
+        <option value="$PROJECT_DIR$/sysconfig_dao/pom.xml" />
+        <option value="$PROJECT_DIR$/sysconfig_api/pom.xml" />
       </list>
     </option>
   </component>
@@ -866,8 +824,16 @@
       <workItem from="1477753770890" duration="117000" />
       <workItem from="1477754560073" duration="7799000" />
       <workItem from="1477795364386" duration="2772000" />
-      <workItem from="1477798269665" duration="2309000" />
+      <workItem from="1477798269665" duration="2634000" />
     </task>
+    <task id="LOCAL-00001" summary="新添加菜单操作">
+      <created>1477800647174</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1477800647174</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -903,7 +869,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12997000" />
+    <option name="totallyTimeSpent" value="13322000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -920,12 +886,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32670453" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32670453" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37177542" sideWeight="0.5032415" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22213247" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26858878" sideWeight="0.4968603" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3650568" sideWeight="0.49675852" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2684659" sideWeight="0.4968603" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1690341" sideWeight="0.49675852" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -960,8 +926,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="新添加菜单操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="新添加菜单操作" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1028,16 +997,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sysconfig_dao/target/generated-sources/mybatis-generator/mapper/MenuMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/sysconfig_dao/src/test/java/MainDao_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sysconfig_domain/src/main/java/vo/Sysconfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1054,36 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sysconfig_parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sysconfig_domain/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sysconfig_dao/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="76" column="21" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sysconfig_api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sysconfig_provider/src/main/java/dao/Temp1.java" />
     <entry file="file://$PROJECT_DIR$/sysconfig_provider/src/main/resources/spring-mybatis.xml" />
     <entry file="file://$USER_HOME$/userENV/repository/com/fasterxml/jackson/core/jackson-databind/2.4.2/jackson-databind-2.4.2.pom">
@@ -1094,14 +1023,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sysconfig_provider/src/test/java/dao/MainDao_Test.java" />
-    <entry file="file://$PROJECT_DIR$/sysconfig_provider/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="98" column="21" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/userENV/repository/org/springframework/spring-context/3.2.16.RELEASE/spring-context-3.2.16.RELEASE.jar!/org/springframework/context/ApplicationContext.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1220,6 +1141,70 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sysconfig_parent/src/test/java/Run.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sysconfig_dao/src/test/java/MainDao_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sysconfig_dao/src/main/java/mapper/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sysconfig_provider/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="104" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sysconfig_parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sysconfig_domain/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sysconfig_dao/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sysconfig_api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
