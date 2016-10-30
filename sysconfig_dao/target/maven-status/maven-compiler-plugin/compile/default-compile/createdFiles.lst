@@ -1,7 +1,1 @@
-bean/UserExample$GeneratedCriteria.class
-bean/UserExample.class
-service/Temp.class
-bean/UserExample$Criteria.class
-dao/UserMapper.class
-bean/UserExample$Criterion.class
-bean/User.class
+mapper/MenuMapper.class

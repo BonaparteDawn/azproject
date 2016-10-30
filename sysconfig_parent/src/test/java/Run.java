@@ -1,4 +1,4 @@
-import entity.Sysconfig;
+import vo.Sysconfig;
 
 /**
  * Created by Fuzhong.Yan on 16/10/29.
