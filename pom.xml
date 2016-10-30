@@ -11,11 +11,14 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
 
+        <module>constant_util</module>
         <module>sysconfig_domain</module>
         <module>sysconfig_dao</module>
         <module>sysconfig_api</module>
         <module>sysconfig_provider</module>
         <module>sysconfig_parent</module>
+        <module>hdfs_provider</module>
+        <module>file_api</module>
 
     </modules>
 </project>

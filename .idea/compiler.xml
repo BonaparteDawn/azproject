@@ -22,6 +22,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="constant_util" />
+        <module name="file_api" />
+        <module name="hdfs_provider" />
         <module name="sysconfig_api" />
         <module name="sysconfig_dao" />
         <module name="sysconfig_domain" />
@@ -31,6 +34,9 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
       <module name="azparent" target="1.5" />
+      <module name="constant_util" target="1.5" />
+      <module name="file_api" target="1.5" />
+      <module name="hdfs_provider" target="1.5" />
       <module name="sysconfig_api" target="1.5" />
       <module name="sysconfig_dao" target="1.5" />
       <module name="sysconfig_domain" target="1.5" />

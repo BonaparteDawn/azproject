@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/azparent.iml" filepath="$PROJECT_DIR$/azparent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/constant_util/constant_util.iml" filepath="$PROJECT_DIR$/constant_util/constant_util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/file_api/file_api.iml" filepath="$PROJECT_DIR$/file_api/file_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hdfs_provider/hdfs_provider.iml" filepath="$PROJECT_DIR$/hdfs_provider/hdfs_provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/sysconfig_api/sysconfig_api.iml" filepath="$PROJECT_DIR$/sysconfig_api/sysconfig_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/sysconfig_dao/sysconfig_dao.iml" filepath="$PROJECT_DIR$/sysconfig_dao/sysconfig_dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/sysconfig_domain/sysconfig_domain.iml" filepath="$PROJECT_DIR$/sysconfig_domain/sysconfig_domain.iml" />
