@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/constant_util/constant_util.iml" filepath="$PROJECT_DIR$/constant_util/constant_util.iml" />
-      <module fileurl="file://$PROJECT_DIR$/file_api/file_api.iml" filepath="$PROJECT_DIR$/file_api/file_api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hdfs_provider/hdfs_provider.iml" filepath="$PROJECT_DIR$/hdfs_provider/hdfs_provider.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sysconfig_api/sysconfig_api.iml" filepath="$PROJECT_DIR$/sysconfig_api/sysconfig_api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sysconfig_dao/sysconfig_dao.iml" filepath="$PROJECT_DIR$/sysconfig_dao/sysconfig_dao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sysconfig_domain/sysconfig_domain.iml" filepath="$PROJECT_DIR$/sysconfig_domain/sysconfig_domain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sysconfig_parent/sysconfig_parent.iml" filepath="$PROJECT_DIR$/sysconfig_parent/sysconfig_parent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sysconfig_provider/sysconfig_provider.iml" filepath="$PROJECT_DIR$/sysconfig_provider/sysconfig_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-config-util/common-config-util.iml" filepath="$PROJECT_DIR$/common-config-util/common-config-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-constant-util/common-constant-util.iml" filepath="$PROJECT_DIR$/common-constant-util/common-constant-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-db-util/common-db-util.iml" filepath="$PROJECT_DIR$/common-db-util/common-db-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-parent/common-parent.iml" filepath="$PROJECT_DIR$/common-parent/common-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-util/common-util.iml" filepath="$PROJECT_DIR$/common-util/common-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/file-api/file-api.iml" filepath="$PROJECT_DIR$/file-api/file-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/file-hdfs-provider/file-hdfs-provider.iml" filepath="$PROJECT_DIR$/file-hdfs-provider/file-hdfs-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member-api/member-api.iml" filepath="$PROJECT_DIR$/member-api/member-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member-dao/member-dao.iml" filepath="$PROJECT_DIR$/member-dao/member-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member-domain/member-domain.iml" filepath="$PROJECT_DIR$/member-domain/member-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member-parent/member-parent.iml" filepath="$PROJECT_DIR$/member-parent/member-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/member-provider/member-provider.iml" filepath="$PROJECT_DIR$/member-provider/member-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-generator/mybatis-generator.iml" filepath="$PROJECT_DIR$/mybatis-generator/mybatis-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sysconfig-api/sysconfig-api.iml" filepath="$PROJECT_DIR$/sysconfig-api/sysconfig-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sysconfig-dao/sysconfig-dao.iml" filepath="$PROJECT_DIR$/sysconfig-dao/sysconfig-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sysconfig-domain/sysconfig-domain.iml" filepath="$PROJECT_DIR$/sysconfig-domain/sysconfig-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sysconfig-parent/sysconfig-parent.iml" filepath="$PROJECT_DIR$/sysconfig-parent/sysconfig-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sysconfig-provider/sysconfig-provider.iml" filepath="$PROJECT_DIR$/sysconfig-provider/sysconfig-provider.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>azparent</artifactId>
+        <groupId>azparent</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>sysconfig</groupId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>sysconfig-parent</artifactId>
+
+    <modules>
+        <module>../sysconfig-domain</module>
+        <module>../sysconfig-dao</module>
+        <module>../sysconfig-api</module>
+        <module>../sysconfig-provider</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>sysconfig</groupId>
+                <artifactId>sysconfig-domain</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>sysconfig</groupId>
+                <artifactId>sysconfig-dao</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>sysconfig</groupId>
+                <artifactId>sysconfig-api</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>sysconfig</groupId>
+                <artifactId>sysconfig-provider</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <!--本模块需要使用系统开发的模块START-->
+        <dependency>
+            <groupId>common</groupId>
+            <artifactId>common-constant-util</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>common</groupId>
+            <artifactId>common-util</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>common</groupId>
+            <artifactId>common-db-util</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>common</groupId>
+            <artifactId>common-config-util</artifactId>
+        </dependency>
+        <!--本模块需要使用系统开发的模块END-->
+    </dependencies>
+</project>

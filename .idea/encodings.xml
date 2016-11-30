@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/constant_util" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/file_api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hdfs_provider" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sysconfig_api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sysconfig_dao" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sysconfig_domain" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/sysconfig_provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-config-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-constant-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-db-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/file-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/file-hdfs-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/member-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/member-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/member-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/member-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/member-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis-generator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sysconfig-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sysconfig-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sysconfig-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sysconfig-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sysconfig-provider" charset="UTF-8" />
   </component>
 </project>

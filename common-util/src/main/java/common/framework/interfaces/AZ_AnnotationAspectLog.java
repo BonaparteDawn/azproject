@@ -1,0 +1,41 @@
+package common.framework.interfaces;
+
+import common.framework.annotation.AS_AspectBean;
+import common.framework.annotation.AZ_LogMethod;
+import constant.AZ_LogType;
+import org.aspectj.lang.ProceedingJoinPoint;
+
+/**
+ * 日志注解接口
+ * Created by Fuzhong.Yan on 16/11/27.
+ */
+public abstract class AZ_AnnotationAspectLog {
+    /**
+     * 日志类型
+     */
+    private AZ_LogType logType;
+    /**
+     * 方法执行前记录日志操作
+     * @param bean
+     */
+    public abstract void before(AS_AspectBean bean);
+    /**
+     * 方法执行后记录日志操作
+     * @param bean
+     */
+    public abstract void after(AS_AspectBean bean);
+    /**
+     * 方法抛出异常记录日志操作
+     * @param bean
+     * @param throwable
+     */
+    public abstract void exception(AS_AspectBean bean,Throwable throwable);
+
+    public AZ_LogType getLogType() {
+        return logType;
+    }
+
+    public void setLogType(AZ_LogType logType) {
+        this.logType = logType;
+    }
+}

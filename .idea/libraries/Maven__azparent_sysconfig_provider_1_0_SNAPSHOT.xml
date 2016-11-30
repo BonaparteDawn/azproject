@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Maven: azparent:sysconfig-provider:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/userENV/repository/azparent/sysconfig-provider/1.0-SNAPSHOT/sysconfig-provider-1.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/sysconfig-provider/sysconfig-provider-1.0-SNAPSHOT-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/userENV/repository/azparent/sysconfig-provider/1.0-SNAPSHOT/sysconfig-provider-1.0-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/sysconfig-provider/sysconfig-provider-1.0-SNAPSHOT-sources.jar!/" />
+      <root url="jar://$USER_HOME$/userENV/repository/azparent/sysconfig-provider/1.0-SNAPSHOT/sysconfig-provider-1.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

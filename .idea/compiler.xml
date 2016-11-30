@@ -22,9 +22,29 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="common-config" />
+        <module name="common-config-util" />
+        <module name="common-constant-util" />
+        <module name="common-constant_util" />
+        <module name="common-db" />
+        <module name="common-db-util" />
+        <module name="common-util" />
+        <module name="common_constant_util" />
         <module name="constant_util" />
+        <module name="file-api" />
+        <module name="file-hdfs-provider" />
         <module name="file_api" />
+        <module name="file_hdfs_provider" />
         <module name="hdfs_provider" />
+        <module name="member-api" />
+        <module name="member-dao" />
+        <module name="member-domain" />
+        <module name="member-provider" />
+        <module name="mybatis-generator" />
+        <module name="sysconfig-api" />
+        <module name="sysconfig-dao" />
+        <module name="sysconfig-domain" />
+        <module name="sysconfig-provider" />
         <module name="sysconfig_api" />
         <module name="sysconfig_dao" />
         <module name="sysconfig_domain" />
@@ -34,9 +54,32 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
       <module name="azparent" target="1.5" />
+      <module name="common-config" target="1.5" />
+      <module name="common-config-util" target="1.5" />
+      <module name="common-constant-util" target="1.5" />
+      <module name="common-constant_util" target="1.5" />
+      <module name="common-db" target="1.5" />
+      <module name="common-db-util" target="1.5" />
+      <module name="common-parent" target="1.5" />
+      <module name="common-util" target="1.5" />
+      <module name="common_constant_util" target="1.5" />
       <module name="constant_util" target="1.5" />
+      <module name="file-api" target="1.5" />
+      <module name="file-hdfs-provider" target="1.5" />
       <module name="file_api" target="1.5" />
+      <module name="file_hdfs_provider" target="1.5" />
       <module name="hdfs_provider" target="1.5" />
+      <module name="member-api" target="1.5" />
+      <module name="member-dao" target="1.5" />
+      <module name="member-domain" target="1.5" />
+      <module name="member-parent" target="1.5" />
+      <module name="member-provider" target="1.5" />
+      <module name="mybatis-generator" target="1.5" />
+      <module name="sysconfig-api" target="1.5" />
+      <module name="sysconfig-dao" target="1.5" />
+      <module name="sysconfig-domain" target="1.5" />
+      <module name="sysconfig-parent" target="1.5" />
+      <module name="sysconfig-provider" target="1.5" />
       <module name="sysconfig_api" target="1.5" />
       <module name="sysconfig_dao" target="1.5" />
       <module name="sysconfig_domain" target="1.5" />

@@ -1,0 +1,75 @@
+log4j.rootLogger = debug,stdout
+
+### 输出信息到控制抬 ###
+log4j.appender.stdout = org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.Target = System.out
+log4j.appender.stdout.layout = org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern = [%-5p] %d{yyyy-MM-dd HH:mm:ss,SSS} method:%l%n%m%n
+
+log4j.logger.com.ibatis=DEBUG,Console
+log4j.logger.com.ibatis.common.jdbc.SimpleDataSource=DEBUG 
+log4j.logger.com.ibatis.common.jdbc.ScriptRunner=DEBUG 
+log4j.logger.com.ibatis.sqlmap.engine.impl.SqlMapClientDelegate=DEBUG 
+log4j.logger.java.sql.Connection=DEBUG 
+log4j.logger.java.sql.Statement=DEBUG 
+log4j.logger.java.sql.PreparedStatement=DEBUG
+
+#========================================================================================================
+#========================================================================================================
+#======view层输出到日志文件(定期回滚日志文件)
+#========================================================================================================
+#========================================================================================================
+log4j.logger.view=INFO,view
+log4j.appender.view = org.apache.log4j.DailyRollingFileAppender
+log4j.appender.view.File = logs/view.log
+#--------------------------------------------------------------------
+#--- 设置输出源
+#----------------------------------
+# true:服务器启动日志是追加
+# false:服务器启动后会生成日志文件把老的覆盖掉
+#--------------------------------------------------------------------
+log4j.appender.view.Append = false
+log4j.appender.view.Threshold = INFO
+log4j.appender.view.layout = org.apache.log4j.PatternLayout
+log4j.appender.view.encoding=UTF-8
+#--------------------------------------------------------------------
+#--- 设置每天生成一个文件名后添加的名称,备份名称
+#--------------------------------------------------------------------
+log4j.appender.view.DatePattern='.'yyyy-MM-dd'.log'
+log4j.appender.view.layout.ConversionPattern = %d: %m%n
+#========================================================================================================
+#========================================================================================================
+#======control层输出到日志文件(回滚文件)
+#========================================================================================================
+#========================================================================================================
+log4j.logger.control=INFO,control
+log4j.appender.control = org.apache.log4j.RollingFileAppender
+#--------------------------------------------------------------------
+#--- 设置日志信息文件名
+#--------------------------------------------------------------------
+log4j.appender.control.File = logs/control.log
+#--------------------------------------------------------------------
+#--- 设置日志信息文件大小
+#--------------------------------------------------------------------
+log4j.appender.control.MaxFileSize=1KB
+#--------------------------------------------------------------------
+#--- 除了本身,备份日志最大数量
+#--------------------------------------------------------------------
+log4j.appender.control.MaxBackupIndex=2
+#--------------------------------------------------------------------
+#--- 设置输出源
+#----------------------------------
+# true:服务器启动日志是追加
+# false:服务器启动后会生成日志文件把老的覆盖掉
+#--------------------------------------------------------------------
+log4j.appender.control.Append = false
+log4j.appender.control.Threshold = INFO 
+log4j.appender.control.layout = org.apache.log4j.PatternLayout
+log4j.appender.control.encoding = UTF-8
+#--------------------------------------------------------------------
+#--- 消息是否被立即输出
+# false:否
+# true:是(默认值)
+#--------------------------------------------------------------------
+log4j.appender.control.ImmediateFlush=true
+log4j.appender.control.layout.ConversionPattern =%d\: %m%n
