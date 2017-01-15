@@ -54,4 +54,15 @@ public  class ListUtils<T,T1> {
     public static boolean isNotEmpty(List temp){
         return !isEmpty(temp);
     }
+
+    public static boolean isNotEmpty(Object[] temp) {
+        return !isEmpty(temp);
+    }
+    public static boolean isEmpty(Object[] temp) {
+        boolean res = false;
+        if (temp == null || temp.length == 0){
+            res = true;
+        }
+        return res;
+    }
 }

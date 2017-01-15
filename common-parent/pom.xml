@@ -16,6 +16,7 @@
         <module>../common-config-util</module>
         <module>../common-util</module>
         <module>../common-db-util</module>
+        <module>../common-redis-util</module>
     </modules>
     <dependencyManagement>
         <dependencies>
@@ -37,6 +38,11 @@
             <dependency>
                 <groupId>common</groupId>
                 <artifactId>common-util</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>common</groupId>
+                <artifactId>common-redis-util</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
         </dependencies>

@@ -52,7 +52,7 @@ public class AZ_MenuVo extends Menu implements Comparable<AZ_MenuVo>{
      */
     public  void printInfo(AZ_MenuVo vo){
         if (vo != null){
-            System.out.println("id:"+vo.getId()+"   parent_id:"+vo.getParentId()+"  name:"+vo.getName());
+            System.out.println("id:"+vo.getId()+"   parent_id:"+vo.getParent_id()+"  name:"+vo.getName());
             List<AZ_MenuVo> children_vo = vo.getChildren();
             for (AZ_MenuVo t_vo : children_vo){
                 printInfo(t_vo);

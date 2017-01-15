@@ -25,9 +25,9 @@ public class MemberService_Test {
         memberApi = (AZ_MemberApi) act.getBean("AZ_MemberService");
     }
     @Test
-    public void testGetMember(){
-        List<Member> a = memberApi.getMemberVo(1, 2);
-        System.out.println(a.size());
+    public void testLogin() throws Exception {
+        boolean res = memberApi.login("18380403901", "password");
+        System.out.println(res);
     }
     @Test
     public void testRegisterMember() throws Exception {

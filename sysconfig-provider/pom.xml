@@ -29,6 +29,10 @@
             <groupId>sysconfig</groupId>
             <artifactId>sysconfig-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>azparent</groupId>
+            <artifactId>file-api</artifactId>
+        </dependency>
         <!--本模块需要使用系统开发的模块END-->
         <!--声明外部资源-start-->
         <dependency>
@@ -43,6 +47,10 @@
             <groupId>com.github.sgroschupf</groupId>
             <artifactId>zkclient</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.caucho</groupId>
+            <artifactId>hessian</artifactId>
+        </dependency>
         <!--声明外部资源-end-->
         <dependency>
             <groupId>log4j</groupId>
@@ -51,25 +59,26 @@
     </dependencies>
     <build>
         <finalName>sysconfig-provider</finalName>
+
         <!--<resources>-->
-            <!--<resource>-->
-                <!--<targetPath>${project.build.directory}/classes</targetPath>-->
-                <!--<directory>src/main/resources</directory>-->
-                <!--<filtering>true</filtering>-->
-                <!--<includes>-->
-                    <!--<include>**/*.xml</include>-->
-                    <!--<include>**/*.propertites</include>-->
-                <!--</includes>-->
-            <!--</resource>-->
+            <!--&lt;!&ndash;<resource>&ndash;&gt;-->
+                <!--&lt;!&ndash;<targetPath>${project.build.directory}/classes</targetPath>&ndash;&gt;-->
+                <!--&lt;!&ndash;<directory>src/main/resources</directory>&ndash;&gt;-->
+                <!--&lt;!&ndash;<filtering>true</filtering>&ndash;&gt;-->
+                <!--&lt;!&ndash;<includes>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<include>**/*.xml</include>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<include>**/*.propertites</include>&ndash;&gt;-->
+                <!--&lt;!&ndash;</includes>&ndash;&gt;-->
+            <!--&lt;!&ndash;</resource>&ndash;&gt;-->
             <!--&lt;!&ndash; 结合com.alibaba.dubbo.container.Main &ndash;&gt;-->
-            <!--<resource>-->
-                <!--<targetPath>${project.build.directory}/classes/META-INF/spring</targetPath>-->
-                <!--<directory>src/main/resources/spring</directory>-->
-                <!--<filtering>true</filtering>-->
-                <!--<includes>-->
-                    <!--<include>spring-context.xml</include>-->
-                <!--</includes>-->
-            <!--</resource>-->
+            <!--&lt;!&ndash;<resource>&ndash;&gt;-->
+                <!--&lt;!&ndash;<targetPath>${project.build.directory}/classes/META-INF/spring</targetPath>&ndash;&gt;-->
+                <!--&lt;!&ndash;<directory>src/main/resources/spring</directory>&ndash;&gt;-->
+                <!--&lt;!&ndash;<filtering>true</filtering>&ndash;&gt;-->
+                <!--&lt;!&ndash;<includes>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<include>spring-context.xml</include>&ndash;&gt;-->
+                <!--&lt;!&ndash;</includes>&ndash;&gt;-->
+            <!--&lt;!&ndash;</resource>&ndash;&gt;-->
         <!--</resources>-->
     </build>
 </project>

@@ -14,9 +14,9 @@ public class MenuMapperTest {
     private MenuTest menuTest;
     @Before
     public  void setMapper(){
-        ClassPathXmlApplicationContext act = new ClassPathXmlApplicationContext("classpath:spring.xml");
+        ClassPathXmlApplicationContext act = new ClassPathXmlApplicationContext("classpath*:spring.xml");
         menuMapper = (MenuMapper) act.getBean("menuMapper");
-        menuTest = (MenuTest)act.getBean("menuTest");
+//        menuTest = (MenuTest)act.getBean("MenuTest");
     }
     @Test
     public void selectByPrimaryKey() throws Exception {
@@ -25,6 +25,6 @@ public class MenuMapperTest {
     }
     @Test
     public void select() throws Exception {
-        menuTest.getAll();
+//        menuTest.getAll();
     }
 }

@@ -11,6 +11,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/file-api/pom.xml" />
+        <option value="$PROJECT_DIR$/common-redis-util/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -28,9 +29,6 @@
     <OptionsSetting value="true" id="Edit" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
-  </component>
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/file-hdfs-provider/src/main/resources/log4j.properties" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="JDK1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

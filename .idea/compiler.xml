@@ -28,6 +28,7 @@
         <module name="common-constant_util" />
         <module name="common-db" />
         <module name="common-db-util" />
+        <module name="common-redis-util" />
         <module name="common-util" />
         <module name="common_constant_util" />
         <module name="constant_util" />
@@ -61,6 +62,7 @@
       <module name="common-db" target="1.5" />
       <module name="common-db-util" target="1.5" />
       <module name="common-parent" target="1.5" />
+      <module name="common-redis-util" target="1.5" />
       <module name="common-util" target="1.5" />
       <module name="common_constant_util" target="1.5" />
       <module name="constant_util" target="1.5" />

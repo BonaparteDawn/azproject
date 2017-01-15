@@ -36,16 +36,6 @@ public class AZ_MemberService implements AZ_MemberApi,Serializable{
     @Autowired
     private AZ_ENV azEnv;
 
-    public List<Member> getMemberVo(int pageNum, int pageSize) {
-        MemberExample e = new MemberExample();
-        PageHelper.startPage(pageNum,pageSize);
-        List<Member> res = memberMapper.selectByExample(e);
-        System.out.println(azEnv.resolvePlaceholders("1 ${  MEMBER_MAX_LOGIN_FAILED_NUMBER  }我爱你"));
-        System.out.println(azEnv.getProperty("MEMBER_MAX_LOGIN_FAILED_NUMBER",Integer.class,Integer.valueOf(2)));
-        System.out.println(azRoleService);
-        return res;
-    }
-
     public Member getMemberByAccount(String account) throws Exception {
         if (ObjectUtils.isEmpty(account)){
             throw new Exception("MEMBER_ACCOUNT_EMPTY");
@@ -86,8 +76,8 @@ public class AZ_MemberService implements AZ_MemberApi,Serializable{
         }
         AZ_MemberVo temp = new AZ_MemberVo();
         BeanUtils.copyProperties(member,temp);
-        if (ObjectUtils.isNotEmpty(temp.getRoleid())){
-            AZ_RoleVo role = azRoleService.getRoleVoByID(temp.getRoleid());
+        if (ObjectUtils.isNotEmpty(temp.getRoleID())){
+            AZ_RoleVo role = azRoleService.getRoleVoByID(temp.getRoleID());
             if (ObjectUtils.isNotEmpty(role)){
                 temp.setAz_roleVo(role);
             }
@@ -112,8 +102,8 @@ public class AZ_MemberService implements AZ_MemberApi,Serializable{
         }
         AZ_MemberVo temp = new AZ_MemberVo();
         BeanUtils.copyProperties(member,temp);
-        if (ObjectUtils.isNotEmpty(temp.getRoleid())){
-            AZ_RoleVo role = azRoleService.getRoleVoByID(temp.getRoleid());
+        if (ObjectUtils.isNotEmpty(temp.getRoleID())){
+            AZ_RoleVo role = azRoleService.getRoleVoByID(temp.getRoleID());
             if (ObjectUtils.isNotEmpty(role)){
                 temp.setAz_roleVo(role);
             }
@@ -182,41 +172,41 @@ public class AZ_MemberService implements AZ_MemberApi,Serializable{
         if (ObjectUtils.isEmpty(member.getPassword())){
             throw new Exception("MEMBER_PASSWORD_EMPTY");
         }
-        member.setRegisttime(new Date());
-        member.setIsLock(AZ_Constant.MEMBER_UNLOCK);
+        member.setRegistTime(new Date());
+        member.setIs_lock(AZ_Constant.MEMBER_UNLOCK);
         member.setLevel(AZ_Constant.MEMBER_DEFAULT_LEVEL);
         if (ObjectUtils.isEmpty(member.getGender())){
             member.setGender(AZ_Constant.MEMBER_MALE);
         }
-        if (ObjectUtils.isEmpty(member.getAuditstate())){
-            member.setAuditstate(AZ_Constant.MEMBER_UN_AUDIT);
+        if (ObjectUtils.isEmpty(member.getAuditState())){
+            member.setAuditState(AZ_Constant.MEMBER_UN_AUDIT);
         }
-        if (ObjectUtils.isEmpty(member.getRoleid())){
-            member.setRoleid(AZ_Constant.ROLE_TYPE_ORDINARY);
+        if (ObjectUtils.isEmpty(member.getRoleID())){
+            member.setRoleID(AZ_Constant.ROLE_TYPE_ORDINARY);
         }
         if (ObjectUtils.isEmpty(member.getLanguage())){
             member.setLanguage(AZ_Constant.MEMBER_DEFAULT_LANGUAGE);
         }
-        Role role = azRoleService.getRoleVoByID(member.getRoleid());
+        Role role = azRoleService.getRoleVoByID(member.getRoleID());
         if (ObjectUtils.isEmpty(role)){
             throw new Exception("MEMBER_ROLE_NOT_EXISTED");
         }else {
-            if (ObjectUtils.isNotEmpty(role.getIsLock()) && role.getIsLock().equals(AZ_Constant.ROLE_LOCK)){
+            if (ObjectUtils.isNotEmpty(role.getIs_lock()) && role.getIs_lock().equals(AZ_Constant.ROLE_LOCK)){
                 throw new Exception("MEMBER_ROLE_LOCKED");
             }
             if (ObjectUtils.isNotEmpty(role.getSize()) && !role.getSize().equals(AZ_Constant.ROLE_SIZE_INFINITE)){
                 MemberExample e = new MemberExample();
                 MemberExample.Criteria ct = e.createCriteria();
-                ct.andRoleidEqualTo(member.getRoleid());
-                int member_role_size = memberMapper.countByExample(e);
+                ct.andRoleIDEqualTo(member.getRoleID());
+                long member_role_size = memberMapper.countByExample(e);
                 if (member_role_size >= role.getSize()){
                     throw new Exception("MEMBER_ROLE_SIZE_LIMIT");
                 }
             }
-            if (ObjectUtils.isNotEmpty(role.getStartTime()) && role.getStartTime().compareTo(new Date()) >0){
+            if (ObjectUtils.isNotEmpty(role.getStart_time()) && role.getStart_time().compareTo(new Date()) >0){
                 throw new Exception("MEMBER_ROLE_START_TIME_E0");
             }
-            if (ObjectUtils.isNotEmpty(role.getEndTime()) && role.getEndTime().compareTo(new Date())<0){
+            if (ObjectUtils.isNotEmpty(role.getEnd_time()) && role.getEnd_time().compareTo(new Date())<0){
                 throw new Exception("MEMBER_ROLE_END_TIME_E0");
             }
         }
@@ -276,26 +266,36 @@ public class AZ_MemberService implements AZ_MemberApi,Serializable{
         if (ObjectUtils.isEmpty(member)){
             throw new Exception("MEMBER_IS_EMPTY");
         }
-        if (member.getIsLock().equals(AZ_Constant.MEMBER_LOCK)){
+        if (member.getIs_lock().equals(AZ_Constant.MEMBER_LOCK)){
             throw new Exception("MEMBER_LOCKED");
         }
         AZ_RoleVo role = member.getAz_roleVo();
         if (ObjectUtils.isNotEmpty(role)){
-            if (ObjectUtils.isNotEmpty(role.getIsLock()) && role.getIsLock().equals(AZ_Constant.ROLE_LOCK)){
+            if (ObjectUtils.isNotEmpty(role.getIs_lock()) && role.getIs_lock().equals(AZ_Constant.ROLE_LOCK)){
                 throw new Exception("ROLE_LOCKED");
             }
             Date date = new Date();
-            boolean start_time = ObjectUtils.isNotEmpty(role.getStartTime()) && date.compareTo(role.getStartTime())>0;
-            boolean end_time = ObjectUtils.isNotEmpty(role.getEndTime()) && role.getEndTime().compareTo(date)>0;
+            boolean start_time = ObjectUtils.isNotEmpty(role.getStart_time()) && date.compareTo(role.getStart_time())>0;
+            boolean end_time = ObjectUtils.isNotEmpty(role.getEnd_time()) && role.getEnd_time().compareTo(date)>0;
             if (!start_time || !end_time){
                 throw new Exception("MEMBER_ROLE_TIME_E");
             }
         }
+        if (ObjectUtils.isNotEmpty(member.getLoginFailNumber()) && member.getLoginFailNumber() >= azEnv.getProperty("MEMBER_MAX_LOGIN_FAILED_NUMBER",Integer.class,AZ_Constant.MEMBER_MAX_LOGIN_FAILED_NUMBER)){
+            throw new Exception("MEMBER_MAX_LOGIN_FAILED_NUMBER_E");
+        }
+        Member t_member = new Member();
+        t_member.setId(member.getId());
         if (ObjectUtils.isNotEmpty(member.getPassword()) && member.getPassword().equals(password)){
+            t_member.setLastLoginTime(new Date());
+            t_member.setLoginFailNumber(0);
             res = true;
         }else{
+            int number = ObjectUtils.isEmpty(member.getLoginFailNumber())?0:member.getLoginFailNumber();
+            t_member.setLoginFailNumber(number+1);
             res = false;
         }
+        memberMapper.updateByPrimaryKeySelective(t_member);
         return res;
     }
 
@@ -329,12 +329,18 @@ public class AZ_MemberService implements AZ_MemberApi,Serializable{
         if (ObjectUtils.isEmpty(member)){
             throw new Exception("MEMBER_IS_EMPTY");
         }
+        if (is_Lock && ObjectUtils.isNotEmpty(member.getIs_lock()) && member.getIs_lock() == AZ_Constant.MEMBER_LOCK){
+            return true;
+        }
+        if (!is_Lock && (ObjectUtils.isEmpty(member.getIs_lock()) || member.getIs_lock() == AZ_Constant.MEMBER_UNLOCK)){
+            return true;
+        }
         Member temp = new Member();
         temp.setId(member_id);
         if (is_Lock){
-            temp.setIsLock(AZ_Constant.MEMBER_LOCK);
+            temp.setIs_lock(AZ_Constant.MEMBER_LOCK);
         }else{
-            temp.setIsLock(AZ_Constant.MEMBER_UNLOCK);
+            temp.setIs_lock(AZ_Constant.MEMBER_UNLOCK);
         }
         boolean res = false;
         int u = memberMapper.updateByPrimaryKeySelective(temp);
@@ -357,7 +363,7 @@ public class AZ_MemberService implements AZ_MemberApi,Serializable{
         }
         Member temp = new Member();
         temp.setId(member_id);
-        temp.setAuditstate(auditState);
+        temp.setAuditState(auditState);
         boolean res = false;
         int u = memberMapper.updateByPrimaryKeySelective(temp);
         if (u>0){

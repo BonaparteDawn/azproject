@@ -20,7 +20,7 @@ public class MemberDaoTest {
     @Test
     public void test(){
         MemberExample e = new MemberExample();
-        int i  = memberMapper.countByExample(e);
+        int i  = (int) memberMapper.countByExample(e);
         Member member = new Member();
         System.out.println(i);
     }

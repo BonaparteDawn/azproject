@@ -21,6 +21,7 @@
             <artifactId>sysconfig-domain</artifactId>
         </dependency>
         <!--本模块需要使用系统开发的模块END-->
+
     </dependencies>
 
     <build>

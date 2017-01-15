@@ -24,11 +24,36 @@ public interface AZ_FileApi {
      * @param fileName
      * @return
      */
-    public boolean writeBytes(byte[] bytes,String fileName) throws IOException;
+    public boolean writeBytes(String fileName,byte[] bytes) throws IOException;
+
+    /**
+     * 将数据追加到指定文件后面(注意fileName必须唯一,建议限制文件的大小)
+     * @param fileName
+     * @return 是否追加成功
+     * @throws IOException
+     */
+    public boolean appendBytes(String fileName,byte[] bytes) throws IOException;
+    /**
+     * 将数据追加到指定文件后面(注意fileName必须唯一,建议限制文件的大小)
+     * @param fileName
+     * @return 是否追加成功
+     * @throws IOException
+     */
+    public boolean appendInputStream(String fileName,InputStream inputStream) throws IOException;
     /**
      * 将服务器的数据保存到字节里面(建议读取的文件是比较小的)
      */
-    public  byte[] readBytes(String fileName) throws IOException;
+    public  byte[] readBytesByFileName(String fileName) throws IOException;
+
+    /**
+     * 将服务器的数据保存到字节里面(建议读取的文件是比较小的)
+     */
+    public  byte[] readBytes(String fileName,long skip_size,int block_size) throws IOException;
+    /**
+     * 将服务器的数据保存到输入流里面(建议读取的文件是比较小的)
+     */
+    public  InputStream readInputStream(String fileName,long skip_size,int block_size) throws IOException;
+
     /**
      * 将服务器文件的数据下载到指定位置
      */
@@ -40,7 +65,7 @@ public interface AZ_FileApi {
      * @param fileName
      * @return
      */
-    public boolean read(OutputStream outputStream,String fileName) throws IOException;
+    public boolean read(String fileName,OutputStream outputStream) throws IOException;
 
     /**
      * 把输入流里面的数据以块的形式读取,然后将数据保存。
@@ -48,7 +73,7 @@ public interface AZ_FileApi {
      * @param fileName
      * @return
      */
-    public boolean write(InputStream inputStream,String fileName) throws IOException;
+    public boolean write(String fileName,InputStream inputStream) throws IOException;
 
     /**
      * 打开文件系统

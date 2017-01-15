@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/common-constant-util/common-constant-util.iml" filepath="$PROJECT_DIR$/common-constant-util/common-constant-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/common-db-util/common-db-util.iml" filepath="$PROJECT_DIR$/common-db-util/common-db-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/common-parent/common-parent.iml" filepath="$PROJECT_DIR$/common-parent/common-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-redis-util/common-redis-util.iml" filepath="$PROJECT_DIR$/common-redis-util/common-redis-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/common-util/common-util.iml" filepath="$PROJECT_DIR$/common-util/common-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/file-api/file-api.iml" filepath="$PROJECT_DIR$/file-api/file-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/file-hdfs-provider/file-hdfs-provider.iml" filepath="$PROJECT_DIR$/file-hdfs-provider/file-hdfs-provider.iml" />

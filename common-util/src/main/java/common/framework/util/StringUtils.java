@@ -26,4 +26,21 @@ public class StringUtils{
         return !isEmpty(temp);
     }
 
+    /**
+     * 截取指定长度的字符串
+     * @return
+     */
+    public static String subString(String content,int start,int end){
+        if (isEmpty(content)){
+            return content;
+        }
+        if (content.length() < end){
+            end = content.length();
+        }
+        if (start > end){
+            start = end;
+        }
+        return  content.substring(start,end);
+    }
+
 }

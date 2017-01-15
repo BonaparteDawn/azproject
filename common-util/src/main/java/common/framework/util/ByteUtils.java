@@ -18,7 +18,23 @@ public class ByteUtils {
         }
         return res;
     }
-
+    /**
+     * 将byte[]转为16进制的字符串
+     * @param bytes byte[]
+     */
+    public static String toRadix(byte[] bytes,int base) throws Exception{
+        String res = null;
+        if (bytes != null && bytes.length !=0) {
+            //radix 可以转换进制的范围，从Character.MIN_RADIX到Character.MAX_RADIX，超出范围后变为10进制转换后的字符串
+            if (base > Character.MAX_RADIX){
+                base = Character.MAX_RADIX;
+            }else if (base < Character.MIN_RADIX){
+                base = Character.MIN_RADIX;
+            }
+            res = new BigInteger(1, bytes).toString(base);
+        }
+        return res;
+    }
     /**
      * 将16进制的字符串转为字节
      * @param hex
@@ -34,6 +50,28 @@ public class ByteUtils {
                 res = tmp;
             }
         }
+        return res;
+    }
+
+    /**
+     * 字节数组连接
+     * @param des
+     * @param data
+     * @return
+     */
+    public static byte[] append(byte[] des,byte[] data){
+        if (des == null && data !=null){
+            return  data;
+        }
+        if (data == null && des!=null){
+            return  des;
+        }
+        if (des == null && data == null){
+            return null;
+        }
+        byte[] res = new byte[des.length+data.length];
+        System.arraycopy(des, 0, res, 0, des.length);
+        System.arraycopy(data, 0, res, des.length, data.length);
         return res;
     }
 }

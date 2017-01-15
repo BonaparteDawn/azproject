@@ -1,5 +1,7 @@
 package common.framework.db;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -22,28 +24,77 @@ public class MySqlDBDao  extends DBDao{
     @Qualifier("sqlSessionTemplateSimple")
     private  SqlSessionTemplate sqlSessionTemplateSimple;
 
-    public List<Object> selectObjects(String statement) throws Exception {
+    public MySqlDBDao(){
+        super();
+    }
+
+    public <T> List<T> selectObjects(String statement) throws Exception {
         if (statement == null || statement.equals("")){
             return null;
         }
         return sqlSessionTemplateSimple.selectList(getNamespace()+"."+statement);
     }
 
-    public List<Object> selectObjects(String statement, Object object) throws Exception {
+    /**
+     * 查询指定页的一组对象
+     *
+     * @param statement
+     * @param pageNum
+     * @param pageSize  @return
+     * @throws Exception
+     */
+    public <T> Page<T> selectObjects(String statement, Integer pageNum, Integer pageSize) throws Exception {
+        if (statement == null || "".equals(statement)){
+            return null;
+        }
+        if (pageNum == null || pageNum <=0){
+            pageNum = 1;
+        }
+        if (pageSize == null || pageSize <0){
+            pageSize = 10;
+        }
+        PageHelper.startPage(pageNum,pageSize);
+        return (Page<T>) sqlSessionTemplateSimple.selectList(getNamespace()+"."+statement);
+    }
+
+    public <T> List<T> selectObjects(String statement, Object object) throws Exception {
         if (statement == null || statement.equals("")){
             return null;
         }
         return sqlSessionTemplateSimple.selectList(getNamespace()+"."+statement,object);
     }
 
-    public Object selectObject(String statement) throws Exception {
+    /**
+     * 查询指定页的一组对象
+     *
+     * @param statement
+     * @param object
+     * @param pageNum
+     * @param pageSize  @return
+     * @throws Exception
+     */
+    public <T> Page<T> selectObjects(String statement, Object object, Integer pageNum, Integer pageSize) throws Exception {
+        if (statement == null || "".equals(statement)){
+            return null;
+        }
+        if (pageNum == null || pageNum <=0){
+            pageNum = 1;
+        }
+        if (pageSize == null || pageSize <0){
+            pageSize = 10;
+        }
+        PageHelper.startPage(pageNum,pageSize);
+        return (Page<T>) sqlSessionTemplateSimple.selectList(getNamespace()+"."+statement,object);
+    }
+
+    public <T> T selectObject(String statement) throws Exception {
         if (statement == null || statement.equals("")){
             return null;
         }
         return sqlSessionTemplateSimple.selectOne(getNamespace()+"."+statement);
     }
 
-    public Object selectObject(String statement, Object object) throws Exception {
+    public <T> T selectObject(String statement, Object object) throws Exception {
         if (statement == null || statement.equals("")){
             return null;
         }

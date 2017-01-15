@@ -1,0 +1,13 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+        ">
+    <dubbo:application name="sysconfig_provider" />
+    <!-- 使用zookeeper注册中心暴露服务地址 -->
+    <dubbo:registry address="multicast://127.0.0.1:2181"/>
+    <!-- 要饮用的服务 -->
+    <dubbo:reference id="azFileApi" interface="fileapi.AZ_FileApi"  url="hessian://localhost:20887/file/hdfs" timeout="1024"></dubbo:reference>
+</beans>

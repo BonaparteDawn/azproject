@@ -1,5 +1,6 @@
 package common.framework.db;
 
+import com.github.pagehelper.Page;
 import org.springframework.transaction.annotation.Transactional;
 import javax.annotation.Resource;
 import java.util.List;
@@ -11,13 +12,24 @@ import java.util.List;
 @Resource
 public abstract class DBDao {
     public String namespace;
+    public DBDao(){
+
+    }
     /**
      * 查询一组对象
      * @param statement
      * @return
      * @throws Exception
      */
-    public abstract List<Object> selectObjects(String statement) throws  Exception;
+    public abstract <T> List<T> selectObjects(String statement) throws  Exception;
+
+    /**
+     * 查询指定页的一组对象
+     * @param statement
+     * @return
+     * @throws Exception
+     */
+    public abstract <T> Page<T> selectObjects(String statement, Integer pageNum, Integer pageSize ) throws  Exception;
 
     /**
      * 查询一组对象
@@ -26,7 +38,16 @@ public abstract class DBDao {
      * @return
      * @throws Exception
      */
-    public abstract List<Object> selectObjects(String statement,Object object) throws  Exception;
+    public abstract <T> List<T> selectObjects(String statement,Object object) throws  Exception;
+
+    /**
+     * 查询指定页的一组对象
+     * @param statement
+     * @return
+     * @throws Exception
+     */
+    public abstract <T> Page<T> selectObjects(String statement,Object object,Integer pageNum,Integer pageSize ) throws  Exception;
+
 
     /**
      * 查询一个对象
@@ -34,7 +55,7 @@ public abstract class DBDao {
      * @return
      * @throws Exception
      */
-    public abstract  Object selectObject(String statement) throws  Exception;
+    public abstract  <T> T selectObject(String statement) throws  Exception;
 
     /**
      * 查询一个对象
@@ -43,7 +64,7 @@ public abstract class DBDao {
      * @return
      * @throws Exception
      */
-    public abstract Object selectObject(String statement,Object object)  throws  Exception;
+    public abstract <T> T selectObject(String statement,Object object)  throws  Exception;
 
     /**
      * 批量更新一组对象

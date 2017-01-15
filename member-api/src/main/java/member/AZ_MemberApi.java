@@ -8,13 +8,7 @@ import java.util.List;
  * Created by Fuzhong.Yan on 16/11/14.
  */
 public interface AZ_MemberApi {
-    /**
-     *
-     * @param pageNum
-     * @param pageSize
-     * @return
-     */
-    public List<Member> getMemberVo(int pageNum, int pageSize);
+
     /**
      * 根据会员账号获得会员的信息
      * @param account

@@ -1,9 +1,9 @@
 package common.framework.annotation;
 
-import constant.AZ_LogType;
+import enums.AZ_LogTime;
+import enums.AZ_LogType;
 
 import java.lang.annotation.*;
-import java.util.List;
 
 /**
  * Created by Fuzhong.Yan on 16/11/27.
@@ -19,5 +19,6 @@ public @interface AZ_LogMethod {
      String appName();
      /**应用描述*/
      String appDesc() default "";
-
+     /**日志记录时机*/
+     AZ_LogTime[] logTime() default {AZ_LogTime.AfterMethod,AZ_LogTime.BeforeMethod,AZ_LogTime.ExceptionMethod};
 }
