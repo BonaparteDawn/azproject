@@ -1,0 +1,423 @@
+2017-01-15 23:13:37,608: Adding [systemProperties] PropertySource with lowest search precedence
+2017-01-15 23:13:37,626: Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-01-15 23:13:37,627: Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-01-15 23:13:37,633: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@440f4d93: startup date [Sun Jan 15 23:13:37 CST 2017]; root of context hierarchy
+2017-01-15 23:13:37,684: Adding [systemProperties] PropertySource with lowest search precedence
+2017-01-15 23:13:37,685: Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-01-15 23:13:37,685: Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-01-15 23:13:37,707: Loading XML bean definitions from URL [file:/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-provider/target/classes/spring.xml]
+2017-01-15 23:13:37,729: Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2017-01-15 23:13:37,762: Loading schema mappings from [META-INF/spring.schemas]
+2017-01-15 23:13:37,769: Loaded schema mappings: {http://mybatis.org/schema/mybatis-spring-1.2.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://code.alibabatech.com/schema/dubbo/dubbo.xsd=META-INF/dubbo.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://mybatis.org/schema/mybatis-spring.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+2017-01-15 23:13:37,776: Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+2017-01-15 23:13:37,883: Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+2017-01-15 23:13:37,909: Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+2017-01-15 23:13:37,998: Loading bean definitions
+2017-01-15 23:13:38,031: Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://code.alibabatech.com/schema/dubbo=com.alibaba.dubbo.config.spring.schema.DubboNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://mybatis.org/schema/mybatis-spring=org.mybatis.spring.config.NamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2017-01-15 23:13:38,107: Adding [systemProperties] PropertySource with lowest search precedence
+2017-01-15 23:13:38,108: Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-01-15 23:13:38,108: Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-01-15 23:13:38,137: Looking for matching resources in directory tree [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-provider/target/test-classes/member]
+2017-01-15 23:13:38,137: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-provider/target/test-classes/member] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-provider/target/test-classes/member/**/*.class]
+2017-01-15 23:13:38,143: Looking for matching resources in directory tree [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-provider/target/classes/member]
+2017-01-15 23:13:38,144: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-provider/target/classes/member] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-provider/target/classes/member/**/*.class]
+2017-01-15 23:13:38,147: Looking for matching resources in directory tree [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-api/target/classes/member]
+2017-01-15 23:13:38,149: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-api/target/classes/member] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-api/target/classes/member/**/*.class]
+2017-01-15 23:13:38,152: Resolved location pattern [classpath*:member/**/*.class] to resources [file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-provider/target/test-classes/member/MemberService_Test.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-provider/target/classes/member/AZ_MemberService.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-provider/target/classes/member/AZ_RoleService.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-api/target/classes/member/AZ_MemberApi.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-api/target/classes/member/AZ_RoleApi.class]]
+2017-01-15 23:13:38,264: Identified candidate component class: file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-provider/target/classes/member/AZ_MemberService.class]
+2017-01-15 23:13:38,265: Identified candidate component class: file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-provider/target/classes/member/AZ_RoleService.class]
+2017-01-15 23:13:38,290: Loading XML bean definitions from class path resource [spring-member-bean.xml]
+2017-01-15 23:13:38,294: Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2017-01-15 23:13:38,297: Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+2017-01-15 23:13:38,386: Loading bean definitions
+2017-01-15 23:13:38,411: Loaded 2 bean definitions from location pattern [classpath:spring-member-bean.xml]
+2017-01-15 23:13:38,411: Imported 2 bean definitions from URL location [classpath:spring-member-bean.xml]
+2017-01-15 23:13:38,415: Loading XML bean definitions from URL [file:/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/spring.xml]
+2017-01-15 23:13:38,424: Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2017-01-15 23:13:38,450: Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+2017-01-15 23:13:38,505: Found XML schema [http://www.springframework.org/schema/aop/spring-aop.xsd] in classpath: org/springframework/aop/config/spring-aop-3.2.xsd
+2017-01-15 23:13:38,512: Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.2.xsd
+2017-01-15 23:13:38,525: Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+2017-01-15 23:13:38,554: Loading bean definitions
+2017-01-15 23:13:38,571: Adding [systemProperties] PropertySource with lowest search precedence
+2017-01-15 23:13:38,572: Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-01-15 23:13:38,573: Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-01-15 23:13:38,577: Looking for matching resources in directory tree [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework]
+2017-01-15 23:13:38,577: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/**/*.class]
+2017-01-15 23:13:38,578: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/abstracted] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/**/*.class]
+2017-01-15 23:13:38,579: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/annotation] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/**/*.class]
+2017-01-15 23:13:38,580: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/bean] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/**/*.class]
+2017-01-15 23:13:38,581: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/exception] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/**/*.class]
+2017-01-15 23:13:38,582: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/interfaces] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/**/*.class]
+2017-01-15 23:13:38,585: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/security] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/**/*.class]
+2017-01-15 23:13:38,588: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/service] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/**/*.class]
+2017-01-15 23:13:38,590: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/util] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/**/*.class]
+2017-01-15 23:13:38,593: Looking for matching resources in directory tree [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-db-util/target/classes/common/framework]
+2017-01-15 23:13:38,594: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-db-util/target/classes/common/framework] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-db-util/target/classes/common/framework/**/*.class]
+2017-01-15 23:13:38,595: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-db-util/target/classes/common/framework/db] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-db-util/target/classes/common/framework/**/*.class]
+2017-01-15 23:13:38,598: Resolved location pattern [classpath*:common/framework/**/*.class] to resources [file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/abstracted/AZ_AnnotationAspectLog.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/abstracted/AZ_Aspect.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/annotation/AZ_LogMethod.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/bean/AS_AspectBean.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/bean/AZ_ResultEntity.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/exception/AZ_BusinessException.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/interfaces/BeanCopy.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/interfaces/Log.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/interfaces/MessageSummary.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/security/AESUtil.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/security/Base64Util.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/security/DESUtil.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/security/MD5Util.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/security/RSAUtil.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/security/SecurityCoder.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/service/AZ_AspectLog.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/service/AZ_ENV.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/service/AZ_Log4j.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/service/AZ_Log4jService.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/service/AZ_LogFactory$1.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/service/AZ_LogFactory.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/util/ByteUtils.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/util/IOUtils.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/util/JsonUtil.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/util/ListUtils.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/util/ObjectUtils.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/util/PropertiesUtil.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/util/StringUtils.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-db-util/target/classes/common/framework/db/DBDao.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-db-util/target/classes/common/framework/db/MySqlDBDao.class]]
+2017-01-15 23:13:38,666: Identified candidate component class: file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/service/AZ_Log4jService.class]
+2017-01-15 23:13:38,690: Identified candidate component class: file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-db-util/target/classes/common/framework/db/MySqlDBDao.class]
+2017-01-15 23:13:38,693: Loading XML bean definitions from URL [file:/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-db-util/target/classes/spring.xml]
+2017-01-15 23:13:38,702: Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2017-01-15 23:13:38,711: Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+2017-01-15 23:13:38,771: Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+2017-01-15 23:13:38,781: Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+2017-01-15 23:13:38,788: Loading bean definitions
+2017-01-15 23:13:38,790: Adding [systemProperties] PropertySource with lowest search precedence
+2017-01-15 23:13:38,792: Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-01-15 23:13:38,792: Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-01-15 23:13:38,833: Looking for matching resources in directory tree [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-db-util/target/classes/common/framework/db]
+2017-01-15 23:13:38,833: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-db-util/target/classes/common/framework/db] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-db-util/target/classes/common/framework/db/**/*.class]
+2017-01-15 23:13:38,835: Resolved location pattern [classpath*:common/framework/db/**/*.class] to resources [file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-db-util/target/classes/common/framework/db/DBDao.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-db-util/target/classes/common/framework/db/MySqlDBDao.class]]
+2017-01-15 23:13:38,846: Identified candidate component class: file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-db-util/target/classes/common/framework/db/MySqlDBDao.class]
+2017-01-15 23:13:38,849: Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2017-01-15 23:13:38,856: Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2017-01-15 23:13:38,861: Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+2017-01-15 23:13:38,937: Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+2017-01-15 23:13:38,956: Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+2017-01-15 23:13:38,980: Found XML schema [http://www.springframework.org/schema/tx/spring-tx.xsd] in classpath: org/springframework/transaction/config/spring-tx-3.2.xsd
+2017-01-15 23:13:38,988: Loading bean definitions
+2017-01-15 23:13:39,087: Neither XML 'id' nor 'name' specified - using generated bean name [org.mybatis.spring.mapper.MapperScannerConfigurer#0]
+2017-01-15 23:13:39,088: Loaded 14 bean definitions from location pattern [classpath:spring-mybatis.xml]
+2017-01-15 23:13:39,089: Imported 14 bean definitions from URL location [classpath:spring-mybatis.xml]
+2017-01-15 23:13:39,089: Loading XML bean definitions from URL [file:/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/spring.xml]
+2017-01-15 23:13:39,095: Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2017-01-15 23:13:39,098: Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+2017-01-15 23:13:39,185: Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+2017-01-15 23:13:39,206: Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+2017-01-15 23:13:39,227: Loading bean definitions
+2017-01-15 23:13:39,229: Adding [systemProperties] PropertySource with lowest search precedence
+2017-01-15 23:13:39,229: Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-01-15 23:13:39,232: Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-01-15 23:13:39,238: Looking for matching resources in directory tree [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper]
+2017-01-15 23:13:39,239: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/**/*.class]
+2017-01-15 23:13:39,241: Resolved location pattern [classpath*:mapper/**/*.class] to resources [file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/MemberMapper.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/RoleMapper.class]]
+2017-01-15 23:13:39,243: Resolved location pattern [classpath*:dao/**/*.class] to resources []
+2017-01-15 23:13:39,244: Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2017-01-15 23:13:39,247: Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2017-01-15 23:13:39,250: Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+2017-01-15 23:13:39,287: Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+2017-01-15 23:13:39,293: Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+2017-01-15 23:13:39,325: Found XML schema [http://www.springframework.org/schema/tx/spring-tx.xsd] in classpath: org/springframework/transaction/config/spring-tx-3.2.xsd
+2017-01-15 23:13:39,354: Loading bean definitions
+2017-01-15 23:13:39,362: Overriding bean definition for bean 'dataSource': replacing [Generic bean: class [com.mchange.v2.c3p0.ComboPooledDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=close; defined in class path resource [spring-mybatis.xml]] with [Generic bean: class [com.mchange.v2.c3p0.ComboPooledDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=close; defined in class path resource [spring-mybatis.xml]]
+2017-01-15 23:13:39,363: Overriding bean definition for bean 'transactionManager': replacing [Generic bean: class [org.springframework.jdbc.datasource.DataSourceTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring-mybatis.xml]] with [Generic bean: class [org.springframework.jdbc.datasource.DataSourceTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring-mybatis.xml]]
+2017-01-15 23:13:39,365: Overriding bean definition for bean 'pageHelperProperties': replacing [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring-mybatis.xml]] with [Generic bean: class [org.springframework.beans.factory.config.PropertiesFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring-mybatis.xml]]
+2017-01-15 23:13:39,368: Overriding bean definition for bean 'pageHelper': replacing [Generic bean: class [com.github.pagehelper.PageHelper]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring-mybatis.xml]] with [Generic bean: class [com.github.pagehelper.PageHelper]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring-mybatis.xml]]
+2017-01-15 23:13:39,370: Overriding bean definition for bean 'sqlSessionFactory': replacing [Generic bean: class [org.mybatis.spring.SqlSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring-mybatis.xml]] with [Generic bean: class [org.mybatis.spring.SqlSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring-mybatis.xml]]
+2017-01-15 23:13:39,395: Overriding bean definition for bean 'sqlSessionTemplateBatch': replacing [Generic bean: class [org.mybatis.spring.SqlSessionTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring-mybatis.xml]] with [Generic bean: class [org.mybatis.spring.SqlSessionTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring-mybatis.xml]]
+2017-01-15 23:13:39,399: Overriding bean definition for bean 'sqlSessionTemplateSimple': replacing [Generic bean: class [org.mybatis.spring.SqlSessionTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring-mybatis.xml]] with [Generic bean: class [org.mybatis.spring.SqlSessionTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring-mybatis.xml]]
+2017-01-15 23:13:39,402: Overriding bean definition for bean 'sqlSessionFactoryUsedGenerator': replacing [Generic bean: class [org.mybatis.spring.SqlSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring-mybatis.xml]] with [Generic bean: class [org.mybatis.spring.SqlSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring-mybatis.xml]]
+2017-01-15 23:13:39,405: Neither XML 'id' nor 'name' specified - using generated bean name [org.mybatis.spring.mapper.MapperScannerConfigurer#1]
+2017-01-15 23:13:39,410: Overriding bean definition for bean 'dbDao': replacing [Generic bean: class [common.framework.db.MySqlDBDao]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring-mybatis.xml]] with [Generic bean: class [common.framework.db.MySqlDBDao]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring-mybatis.xml]]
+2017-01-15 23:13:39,411: Loaded 2 bean definitions from location pattern [classpath:spring-mybatis.xml]
+2017-01-15 23:13:39,411: Imported 2 bean definitions from URL location [classpath:spring-mybatis.xml]
+2017-01-15 23:13:39,411: Loaded 27 bean definitions from location pattern [classpath*:spring.xml]
+2017-01-15 23:13:39,412: Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@440f4d93: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a004f62: defining beans [AZ_MemberService,AZ_RoleService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,memberENV,azEnv,org.springframework.aop.config.internalAutoProxyCreator,AZ_Log4jService,mySqlDBDao,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,pageHelperProperties,pageHelper,sqlSessionFactory,sqlSessionTemplateBatch,sqlSessionTemplateSimple,sqlSessionFactoryUsedGenerator,org.mybatis.spring.mapper.MapperScannerConfigurer#0,dbDao,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1,org.mybatis.spring.mapper.MapperScannerConfigurer#1]; root of factory hierarchy
+2017-01-15 23:13:39,601: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-01-15 23:13:39,602: Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-01-15 23:13:39,662: Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2017-01-15 23:13:39,686: Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-01-15 23:13:39,688: Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2017-01-15 23:13:39,689: Creating instance of bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2017-01-15 23:13:39,690: Eagerly caching bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0' to allow for resolving potential circular references
+2017-01-15 23:13:39,788: Invoking afterPropertiesSet() on bean with name 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2017-01-15 23:13:39,795: Finished creating instance of bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2017-01-15 23:13:39,797: Creating shared instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#1'
+2017-01-15 23:13:39,800: Creating instance of bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#1'
+2017-01-15 23:13:39,801: Eagerly caching bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#1' to allow for resolving potential circular references
+2017-01-15 23:13:39,809: Invoking afterPropertiesSet() on bean with name 'org.mybatis.spring.mapper.MapperScannerConfigurer#1'
+2017-01-15 23:13:39,810: Finished creating instance of bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#1'
+2017-01-15 23:13:40,137: Adding [systemProperties] PropertySource with lowest search precedence
+2017-01-15 23:13:40,138: Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-01-15 23:13:40,138: Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-01-15 23:13:40,144: Looking for matching resources in directory tree [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper]
+2017-01-15 23:13:40,145: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/**/*.class]
+2017-01-15 23:13:40,146: Resolved location pattern [classpath*:mapper/**/*.class] to resources [file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/MemberMapper.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/RoleMapper.class]]
+2017-01-15 23:13:40,146: Identified candidate component class: file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/MemberMapper.class]
+2017-01-15 23:13:40,147: Identified candidate component class: file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/RoleMapper.class]
+2017-01-15 23:13:40,147: Creating MapperFactoryBean with name 'memberMapper' and 'mapper.MemberMapper' mapperInterface
+2017-01-15 23:13:40,148: Creating MapperFactoryBean with name 'roleMapper' and 'mapper.RoleMapper' mapperInterface
+2017-01-15 23:13:40,149: Adding [systemProperties] PropertySource with lowest search precedence
+2017-01-15 23:13:40,150: Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-01-15 23:13:40,150: Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-01-15 23:13:40,151: Looking for matching resources in directory tree [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper]
+2017-01-15 23:13:40,152: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/**/*.class]
+2017-01-15 23:13:40,153: Resolved location pattern [classpath*:mapper/**/*.class] to resources [file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/MemberMapper.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/RoleMapper.class]]
+2017-01-15 23:13:40,153: Identified candidate component class: file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/MemberMapper.class]
+2017-01-15 23:13:40,154: Identified candidate component class: file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/RoleMapper.class]
+2017-01-15 23:13:40,155: Skipping MapperFactoryBean with name 'memberMapper' and 'mapper.MemberMapper' mapperInterface. Bean already defined with the same name!
+2017-01-15 23:13:40,155: Skipping MapperFactoryBean with name 'roleMapper' and 'mapper.RoleMapper' mapperInterface. Bean already defined with the same name!
+2017-01-15 23:13:40,155: No MyBatis mapper was found in '[mapper]' package. Please check your configuration.
+2017-01-15 23:13:40,159: Creating shared instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+2017-01-15 23:13:40,159: Creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+2017-01-15 23:13:40,173: Eagerly caching bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0' to allow for resolving potential circular references
+2017-01-15 23:13:40,193: Finished creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+2017-01-15 23:13:40,194: Creating shared instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1'
+2017-01-15 23:13:40,194: Creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1'
+2017-01-15 23:13:40,198: Eagerly caching bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1' to allow for resolving potential circular references
+2017-01-15 23:13:40,201: Finished creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1'
+2017-01-15 23:13:40,202: Loading properties file from URL [file:/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-config-util/target/classes/mysql.properties]
+2017-01-15 23:13:40,207: Loading properties file from URL [file:/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-config-util/target/classes/mysql.properties]
+2017-01-15 23:13:40,230: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-01-15 23:13:40,231: Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-01-15 23:13:40,237: Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2017-01-15 23:13:40,238: Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-01-15 23:13:40,238: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-01-15 23:13:40,238: Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-01-15 23:13:40,243: Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2017-01-15 23:13:40,243: Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-01-15 23:13:40,244: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-01-15 23:13:40,244: Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-01-15 23:13:40,262: Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2017-01-15 23:13:40,263: Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-01-15 23:13:40,263: Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-01-15 23:13:40,264: Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-01-15 23:13:40,264: Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2017-01-15 23:13:40,270: Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-01-15 23:13:40,270: Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2017-01-15 23:13:40,271: Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2017-01-15 23:13:40,321: Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+2017-01-15 23:13:40,356: Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2017-01-15 23:13:40,382: Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@50b937e]
+2017-01-15 23:13:40,400: Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@3890659a]
+2017-01-15 23:13:40,451: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a004f62: defining beans [AZ_MemberService,AZ_RoleService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,memberENV,azEnv,org.springframework.aop.config.internalAutoProxyCreator,AZ_Log4jService,mySqlDBDao,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSource,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,pageHelperProperties,pageHelper,sqlSessionFactory,sqlSessionTemplateBatch,sqlSessionTemplateSimple,sqlSessionFactoryUsedGenerator,org.mybatis.spring.mapper.MapperScannerConfigurer#0,dbDao,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1,org.mybatis.spring.mapper.MapperScannerConfigurer#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,memberMapper,roleMapper]; root of factory hierarchy
+2017-01-15 23:13:40,453: Creating shared instance of singleton bean 'AZ_MemberService'
+2017-01-15 23:13:40,460: Creating instance of bean 'AZ_MemberService'
+2017-01-15 23:13:40,469: Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:40,470: Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:40,473: Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+2017-01-15 23:13:40,498: Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2017-01-15 23:13:40,498: Creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2017-01-15 23:13:40,516: Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:40,644: Eagerly caching bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' to allow for resolving potential circular references
+2017-01-15 23:13:40,651: Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:40,659: Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:40,690: Finished creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2017-01-15 23:13:40,691: Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:40,761: Registered injected element on class [member.AZ_MemberService]: AutowiredFieldElement for private mapper.MemberMapper member.AZ_MemberService.memberMapper
+2017-01-15 23:13:40,761: Registered injected element on class [member.AZ_MemberService]: AutowiredFieldElement for private member.AZ_RoleApi member.AZ_MemberService.azRoleService
+2017-01-15 23:13:40,761: Registered injected element on class [member.AZ_MemberService]: AutowiredFieldElement for private common.framework.service.AZ_ENV member.AZ_MemberService.azEnv
+2017-01-15 23:13:40,762: Eagerly caching bean 'AZ_MemberService' to allow for resolving potential circular references
+2017-01-15 23:13:40,764: Processing injected element of bean 'AZ_MemberService': AutowiredFieldElement for private mapper.MemberMapper member.AZ_MemberService.memberMapper
+2017-01-15 23:13:40,767: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:40,768: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:40,769: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:40,823: Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-01-15 23:13:40,827: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:40,828: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:40,880: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:40,889: Creating shared instance of singleton bean 'memberMapper'
+2017-01-15 23:13:40,889: Creating instance of bean 'memberMapper'
+2017-01-15 23:13:40,891: Eagerly caching bean 'memberMapper' to allow for resolving potential circular references
+2017-01-15 23:13:40,957: Creating shared instance of singleton bean 'sqlSessionFactoryUsedGenerator'
+2017-01-15 23:13:40,959: Creating instance of bean 'sqlSessionFactoryUsedGenerator'
+2017-01-15 23:13:41,009: Eagerly caching bean 'sqlSessionFactoryUsedGenerator' to allow for resolving potential circular references
+2017-01-15 23:13:41,021: Creating shared instance of singleton bean 'dataSource'
+2017-01-15 23:13:41,023: Creating instance of bean 'dataSource'
+2017-01-15 23:13:41,025: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:41,056: MLog clients using log4j logging.
+2017-01-15 23:13:41,437: Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2017-01-15 23:13:41,488: MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge0yt9l1952qvbripraf|3ffed5aa] registered.
+2017-01-15 23:13:41,522: Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+2017-01-15 23:13:41,599: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:41,600: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:41,634: Finished creating instance of bean 'dataSource'
+2017-01-15 23:13:41,636: Looking for matching resources in directory tree [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper]
+2017-01-15 23:13:41,637: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/**/*.xml]
+2017-01-15 23:13:41,639: Resolved location pattern [classpath:/mapper/**/*.xml] to resources [file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/MemberMapper.xml], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/RoleMapper.xml]]
+2017-01-15 23:13:41,639: Creating shared instance of singleton bean 'pageHelper'
+2017-01-15 23:13:41,639: Creating instance of bean 'pageHelper'
+2017-01-15 23:13:41,640: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:41,651: Eagerly caching bean 'pageHelper' to allow for resolving potential circular references
+2017-01-15 23:13:41,664: Creating shared instance of singleton bean 'pageHelperProperties'
+2017-01-15 23:13:41,664: Creating instance of bean 'pageHelperProperties'
+2017-01-15 23:13:41,670: Eagerly caching bean 'pageHelperProperties' to allow for resolving potential circular references
+2017-01-15 23:13:41,686: Invoking afterPropertiesSet() on bean with name 'pageHelperProperties'
+2017-01-15 23:13:41,688: Loading properties file from class path resource [pagehelper.properties]
+2017-01-15 23:13:41,689: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:41,690: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:41,692: Finished creating instance of bean 'pageHelperProperties'
+2017-01-15 23:13:41,694: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:41,695: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:41,798: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:41,799: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:41,802: Finished creating instance of bean 'pageHelper'
+2017-01-15 23:13:41,811: Invoking afterPropertiesSet() on bean with name 'sqlSessionFactoryUsedGenerator'
+2017-01-15 23:13:41,812: Property `configuration` or 'configLocation' not specified, using default MyBatis Configuration
+2017-01-15 23:13:41,992: Registered plugin: 'com.github.pagehelper.PageHelper@533f785b'
+2017-01-15 23:13:42,414: Parsed mapper file: 'file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/MemberMapper.xml]'
+2017-01-15 23:13:42,484: Parsed mapper file: 'file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/member-dao/target/classes/mapper/RoleMapper.xml]'
+2017-01-15 23:13:42,485: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,486: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,487: Finished creating instance of bean 'sqlSessionFactoryUsedGenerator'
+2017-01-15 23:13:42,487: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,488: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,504: Invoking afterPropertiesSet() on bean with name 'memberMapper'
+2017-01-15 23:13:42,504: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,504: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,506: Finished creating instance of bean 'memberMapper'
+2017-01-15 23:13:42,510: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,510: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,513: Autowiring by type from bean name 'AZ_MemberService' to bean named 'memberMapper'
+2017-01-15 23:13:42,514: Processing injected element of bean 'AZ_MemberService': AutowiredFieldElement for private member.AZ_RoleApi member.AZ_MemberService.azRoleService
+2017-01-15 23:13:42,514: Creating shared instance of singleton bean 'AZ_RoleService'
+2017-01-15 23:13:42,515: Creating instance of bean 'AZ_RoleService'
+2017-01-15 23:13:42,515: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,517: Registered injected element on class [member.AZ_RoleService]: AutowiredFieldElement for private mapper.RoleMapper member.AZ_RoleService.roleMapper
+2017-01-15 23:13:42,518: Registered injected element on class [member.AZ_RoleService]: AutowiredFieldElement for private common.framework.service.AZ_ENV member.AZ_RoleService.azEnv
+2017-01-15 23:13:42,518: Eagerly caching bean 'AZ_RoleService' to allow for resolving potential circular references
+2017-01-15 23:13:42,522: Processing injected element of bean 'AZ_RoleService': AutowiredFieldElement for private mapper.RoleMapper member.AZ_RoleService.roleMapper
+2017-01-15 23:13:42,523: Creating shared instance of singleton bean 'roleMapper'
+2017-01-15 23:13:42,523: Creating instance of bean 'roleMapper'
+2017-01-15 23:13:42,524: Eagerly caching bean 'roleMapper' to allow for resolving potential circular references
+2017-01-15 23:13:42,524: Returning cached instance of singleton bean 'sqlSessionFactoryUsedGenerator'
+2017-01-15 23:13:42,525: Invoking afterPropertiesSet() on bean with name 'roleMapper'
+2017-01-15 23:13:42,525: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,525: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,525: Finished creating instance of bean 'roleMapper'
+2017-01-15 23:13:42,528: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,529: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,531: Autowiring by type from bean name 'AZ_RoleService' to bean named 'roleMapper'
+2017-01-15 23:13:42,531: Processing injected element of bean 'AZ_RoleService': AutowiredFieldElement for private common.framework.service.AZ_ENV member.AZ_RoleService.azEnv
+2017-01-15 23:13:42,532: Creating shared instance of singleton bean 'azEnv'
+2017-01-15 23:13:42,532: Creating instance of bean 'azEnv'
+2017-01-15 23:13:42,533: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,533: Eagerly caching bean 'azEnv' to allow for resolving potential circular references
+2017-01-15 23:13:42,535: Creating shared instance of singleton bean 'memberENV'
+2017-01-15 23:13:42,535: Creating instance of bean 'memberENV'
+2017-01-15 23:13:42,536: Eagerly caching bean 'memberENV' to allow for resolving potential circular references
+2017-01-15 23:13:42,537: Invoking afterPropertiesSet() on bean with name 'memberENV'
+2017-01-15 23:13:42,537: Loading properties file from class path resource [member.properties]
+2017-01-15 23:13:42,537: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,538: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,538: Finished creating instance of bean 'memberENV'
+2017-01-15 23:13:42,539: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,539: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,540: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,540: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,542: Finished creating instance of bean 'azEnv'
+2017-01-15 23:13:42,542: Autowiring by type from bean name 'AZ_RoleService' to bean named 'azEnv'
+2017-01-15 23:13:42,542: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,543: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,545: Finished creating instance of bean 'AZ_RoleService'
+2017-01-15 23:13:42,546: Autowiring by type from bean name 'AZ_MemberService' to bean named 'AZ_RoleService'
+2017-01-15 23:13:42,546: Processing injected element of bean 'AZ_MemberService': AutowiredFieldElement for private common.framework.service.AZ_ENV member.AZ_MemberService.azEnv
+2017-01-15 23:13:42,547: Returning cached instance of singleton bean 'azEnv'
+2017-01-15 23:13:42,547: Autowiring by type from bean name 'AZ_MemberService' to bean named 'azEnv'
+2017-01-15 23:13:42,548: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,548: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,551: Finished creating instance of bean 'AZ_MemberService'
+2017-01-15 23:13:42,552: Returning cached instance of singleton bean 'AZ_RoleService'
+2017-01-15 23:13:42,552: Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-01-15 23:13:42,552: Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-01-15 23:13:42,552: Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-01-15 23:13:42,552: Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-01-15 23:13:42,552: Returning cached instance of singleton bean 'memberENV'
+2017-01-15 23:13:42,553: Returning cached instance of singleton bean 'azEnv'
+2017-01-15 23:13:42,553: Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2017-01-15 23:13:42,553: Creating shared instance of singleton bean 'AZ_Log4jService'
+2017-01-15 23:13:42,554: Creating instance of bean 'AZ_Log4jService'
+2017-01-15 23:13:42,554: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,558: Eagerly caching bean 'AZ_Log4jService' to allow for resolving potential circular references
+2017-01-15 23:13:42,561: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,563: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,565: Finished creating instance of bean 'AZ_Log4jService'
+2017-01-15 23:13:42,566: Creating shared instance of singleton bean 'mySqlDBDao'
+2017-01-15 23:13:42,568: Creating instance of bean 'mySqlDBDao'
+2017-01-15 23:13:42,569: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,576: Registered injected element on class [common.framework.db.MySqlDBDao]: AutowiredFieldElement for private org.mybatis.spring.SqlSessionTemplate common.framework.db.MySqlDBDao.sqlSessionTemplateBatch
+2017-01-15 23:13:42,576: Registered injected element on class [common.framework.db.MySqlDBDao]: AutowiredFieldElement for private org.mybatis.spring.SqlSessionTemplate common.framework.db.MySqlDBDao.sqlSessionTemplateSimple
+2017-01-15 23:13:42,577: Eagerly caching bean 'mySqlDBDao' to allow for resolving potential circular references
+2017-01-15 23:13:42,579: Processing injected element of bean 'mySqlDBDao': AutowiredFieldElement for private org.mybatis.spring.SqlSessionTemplate common.framework.db.MySqlDBDao.sqlSessionTemplateBatch
+2017-01-15 23:13:42,581: Creating shared instance of singleton bean 'sqlSessionTemplateBatch'
+2017-01-15 23:13:42,581: Creating instance of bean 'sqlSessionTemplateBatch'
+2017-01-15 23:13:42,581: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,581: Creating shared instance of singleton bean 'sqlSessionFactory'
+2017-01-15 23:13:42,582: Creating instance of bean 'sqlSessionFactory'
+2017-01-15 23:13:42,582: Eagerly caching bean 'sqlSessionFactory' to allow for resolving potential circular references
+2017-01-15 23:13:42,583: Returning cached instance of singleton bean 'dataSource'
+2017-01-15 23:13:42,583: Returning cached instance of singleton bean 'pageHelper'
+2017-01-15 23:13:42,583: Invoking afterPropertiesSet() on bean with name 'sqlSessionFactory'
+2017-01-15 23:13:42,589: Registered plugin: 'com.github.pagehelper.PageHelper@533f785b'
+2017-01-15 23:13:42,608: Parsed configuration file: 'class path resource [MyBatis-Configuration.xml]'
+2017-01-15 23:13:42,609: Property 'mapperLocations' was not specified or no matching resources found
+2017-01-15 23:13:42,609: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,609: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,610: Finished creating instance of bean 'sqlSessionFactory'
+2017-01-15 23:13:42,610: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,610: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,612: No property editor [org.apache.ibatis.session.ExecutorTypeEditor] found for type org.apache.ibatis.session.ExecutorType according to 'Editor' suffix convention
+2017-01-15 23:13:42,615: Eagerly caching bean 'sqlSessionTemplateBatch' to allow for resolving potential circular references
+2017-01-15 23:13:42,617: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,618: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,620: Finished creating instance of bean 'sqlSessionTemplateBatch'
+2017-01-15 23:13:42,621: Autowiring by type from bean name 'mySqlDBDao' to bean named 'sqlSessionTemplateBatch'
+2017-01-15 23:13:42,622: Processing injected element of bean 'mySqlDBDao': AutowiredFieldElement for private org.mybatis.spring.SqlSessionTemplate common.framework.db.MySqlDBDao.sqlSessionTemplateSimple
+2017-01-15 23:13:42,622: Creating shared instance of singleton bean 'sqlSessionTemplateSimple'
+2017-01-15 23:13:42,622: Creating instance of bean 'sqlSessionTemplateSimple'
+2017-01-15 23:13:42,622: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,623: Returning cached instance of singleton bean 'sqlSessionFactory'
+2017-01-15 23:13:42,624: Eagerly caching bean 'sqlSessionTemplateSimple' to allow for resolving potential circular references
+2017-01-15 23:13:42,624: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,624: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,625: Finished creating instance of bean 'sqlSessionTemplateSimple'
+2017-01-15 23:13:42,625: Autowiring by type from bean name 'mySqlDBDao' to bean named 'sqlSessionTemplateSimple'
+2017-01-15 23:13:42,625: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,625: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,626: Finished creating instance of bean 'mySqlDBDao'
+2017-01-15 23:13:42,626: Returning cached instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+2017-01-15 23:13:42,626: Returning cached instance of singleton bean 'dataSource'
+2017-01-15 23:13:42,626: Creating shared instance of singleton bean 'transactionManager'
+2017-01-15 23:13:42,627: Creating instance of bean 'transactionManager'
+2017-01-15 23:13:42,627: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,635: Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+2017-01-15 23:13:42,641: Returning cached instance of singleton bean 'dataSource'
+2017-01-15 23:13:42,642: Invoking afterPropertiesSet() on bean with name 'transactionManager'
+2017-01-15 23:13:42,643: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,643: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,645: Finished creating instance of bean 'transactionManager'
+2017-01-15 23:13:42,645: Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2017-01-15 23:13:42,645: Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2017-01-15 23:13:42,646: Creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2017-01-15 23:13:42,648: Eagerly caching bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0' to allow for resolving potential circular references
+2017-01-15 23:13:42,657: Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2017-01-15 23:13:42,658: Invoking afterPropertiesSet() on bean with name 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2017-01-15 23:13:42,659: Finished creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2017-01-15 23:13:42,661: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,661: Returning cached instance of singleton bean 'pageHelperProperties'
+2017-01-15 23:13:42,662: Returning cached instance of singleton bean 'pageHelper'
+2017-01-15 23:13:42,663: Returning cached instance of singleton bean 'sqlSessionFactory'
+2017-01-15 23:13:42,663: Returning cached instance of singleton bean 'sqlSessionTemplateBatch'
+2017-01-15 23:13:42,664: Returning cached instance of singleton bean 'sqlSessionTemplateSimple'
+2017-01-15 23:13:42,664: Returning cached instance of singleton bean 'sqlSessionFactoryUsedGenerator'
+2017-01-15 23:13:42,664: Returning cached instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#0'
+2017-01-15 23:13:42,665: Creating shared instance of singleton bean 'dbDao'
+2017-01-15 23:13:42,665: Creating instance of bean 'dbDao'
+2017-01-15 23:13:42,665: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,672: Registered injected element on class [common.framework.db.MySqlDBDao]: AutowiredFieldElement for private org.mybatis.spring.SqlSessionTemplate common.framework.db.MySqlDBDao.sqlSessionTemplateBatch
+2017-01-15 23:13:42,673: Registered injected element on class [common.framework.db.MySqlDBDao]: AutowiredFieldElement for private org.mybatis.spring.SqlSessionTemplate common.framework.db.MySqlDBDao.sqlSessionTemplateSimple
+2017-01-15 23:13:42,673: Eagerly caching bean 'dbDao' to allow for resolving potential circular references
+2017-01-15 23:13:42,674: Processing injected element of bean 'dbDao': AutowiredFieldElement for private org.mybatis.spring.SqlSessionTemplate common.framework.db.MySqlDBDao.sqlSessionTemplateBatch
+2017-01-15 23:13:42,674: Returning cached instance of singleton bean 'sqlSessionTemplateBatch'
+2017-01-15 23:13:42,674: Autowiring by type from bean name 'dbDao' to bean named 'sqlSessionTemplateBatch'
+2017-01-15 23:13:42,674: Processing injected element of bean 'dbDao': AutowiredFieldElement for private org.mybatis.spring.SqlSessionTemplate common.framework.db.MySqlDBDao.sqlSessionTemplateSimple
+2017-01-15 23:13:42,675: Returning cached instance of singleton bean 'sqlSessionTemplateSimple'
+2017-01-15 23:13:42,675: Autowiring by type from bean name 'dbDao' to bean named 'sqlSessionTemplateSimple'
+2017-01-15 23:13:42,676: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,676: Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-01-15 23:13:42,676: Finished creating instance of bean 'dbDao'
+2017-01-15 23:13:42,676: Returning cached instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#1'
+2017-01-15 23:13:42,677: Returning cached instance of singleton bean 'org.mybatis.spring.mapper.MapperScannerConfigurer#1'
+2017-01-15 23:13:42,677: Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-01-15 23:13:42,677: Returning cached instance of singleton bean 'memberMapper'
+2017-01-15 23:13:42,677: Returning cached instance of singleton bean 'roleMapper'
+2017-01-15 23:13:42,679: Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@77135c3a]
+2017-01-15 23:13:42,681: Returning cached instance of singleton bean 'lifecycleProcessor'
+2017-01-15 23:13:42,687: Returning cached instance of singleton bean 'sqlSessionFactory'
+2017-01-15 23:13:42,688: Returning cached instance of singleton bean 'sqlSessionFactoryUsedGenerator'
+2017-01-15 23:13:42,692: Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2017-01-15 23:13:42,693: Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2017-01-15 23:13:42,694: Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2017-01-15 23:13:42,694: Returning cached instance of singleton bean 'AZ_MemberService'
