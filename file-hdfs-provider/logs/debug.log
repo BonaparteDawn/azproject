@@ -1,0 +1,551 @@
+2017-01-07 17:44:08,761: SpringJUnit4ClassRunner constructor called with [class hdfs.AZ_HDFS_FilePorviderTest].
+2017-01-07 17:44:08,842: Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@6539defe declaringClass = 'hdfs.BaseTest', classes = '{}', locations = '{classpath*:META-INF/spring/spring.xml}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2017-01-07 17:44:08,844: Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [hdfs.AZ_HDFS_FilePorviderTest]
+2017-01-07 17:44:08,848: @TestExecutionListeners is not present for class [hdfs.AZ_HDFS_FilePorviderTest]: using defaults.
+2017-01-07 17:44:08,858: Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/web/context/request/RequestAttributes]
+2017-01-07 17:44:08,861: Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2017-01-07 17:44:08,866: Retrieved @ProfileValueSourceConfiguration [null] for test class [hdfs.AZ_HDFS_FilePorviderTest]
+2017-01-07 17:44:08,867: Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [hdfs.AZ_HDFS_FilePorviderTest]
+2017-01-07 17:44:08,877: Retrieved @ProfileValueSourceConfiguration [null] for test class [hdfs.AZ_HDFS_FilePorviderTest]
+2017-01-07 17:44:08,877: Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [hdfs.AZ_HDFS_FilePorviderTest]
+2017-01-07 17:44:08,880: Retrieved @ProfileValueSourceConfiguration [null] for test class [hdfs.AZ_HDFS_FilePorviderTest]
+2017-01-07 17:44:08,880: Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [hdfs.AZ_HDFS_FilePorviderTest]
+2017-01-07 17:44:08,881: Retrieved @ProfileValueSourceConfiguration [null] for test class [hdfs.AZ_HDFS_FilePorviderTest]
+2017-01-07 17:44:08,882: Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [hdfs.AZ_HDFS_FilePorviderTest]
+2017-01-07 17:44:08,887: Retrieved @ProfileValueSourceConfiguration [null] for test class [hdfs.AZ_HDFS_FilePorviderTest]
+2017-01-07 17:44:08,887: Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [hdfs.AZ_HDFS_FilePorviderTest]
+2017-01-07 17:44:08,893: Performing dependency injection for test context [[TestContext@3f2a4aec testClass = AZ_HDFS_FilePorviderTest, testInstance = null(hdfs.AZ_HDFS_FilePorviderTest), testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@719cec59 testClass = AZ_HDFS_FilePorviderTest, locations = '{classpath*:META-INF/spring/spring.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+2017-01-07 17:44:08,894: Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@719cec59 testClass = AZ_HDFS_FilePorviderTest, locations = '{classpath*:META-INF/spring/spring.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2017-01-07 17:44:08,894: Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@719cec59 testClass = AZ_HDFS_FilePorviderTest, locations = '{classpath*:META-INF/spring/spring.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2017-01-07 17:44:09,081: Adding [systemProperties] PropertySource with lowest search precedence
+2017-01-07 17:44:09,085: Adding [systemEnvironment] PropertySource with lowest search precedence
+2017-01-07 17:44:09,087: Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2017-01-07 17:44:09,117: Loading XML bean definitions from URL [file:/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/file-hdfs-provider/target/classes/META-INF/spring/spring.xml]
+2017-01-07 17:44:09,326: Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+2017-01-07 17:44:09,687: Loading schema mappings from [META-INF/spring.schemas]
+2017-01-07 17:44:09,701: Loaded schema mappings: {http://code.alibabatech.com/schema/dubbo/dubbo.xsd=META-INF/dubbo.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+2017-01-07 17:44:09,706: Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+2017-01-07 17:44:09,933: Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+2017-01-07 17:44:09,962: Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+2017-01-07 17:44:09,984: Loading bean definitions
+2017-01-07 17:44:10,059: Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://code.alibabatech.com/schema/dubbo=com.alibaba.dubbo.config.spring.schema.DubboNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2017-01-07 17:44:10,146: Looking for matching resources in directory tree [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/file-hdfs-provider/target/test-classes/hdfs]
+2017-01-07 17:44:10,147: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/file-hdfs-provider/target/test-classes/hdfs] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/file-hdfs-provider/target/test-classes/hdfs/**/*.class]
+2017-01-07 17:44:10,160: Looking for matching resources in directory tree [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/file-hdfs-provider/target/classes/hdfs]
+2017-01-07 17:44:10,161: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/file-hdfs-provider/target/classes/hdfs] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/file-hdfs-provider/target/classes/hdfs/**/*.class]
+2017-01-07 17:44:10,165: Resolved location pattern [classpath*:hdfs/**/*.class] to resources [file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/file-hdfs-provider/target/test-classes/hdfs/AZ_HDFS_FilePorviderTest.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/file-hdfs-provider/target/test-classes/hdfs/BaseTest.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/file-hdfs-provider/target/classes/hdfs/AZ_HDFS_FilePorvider.class]]
+2017-01-07 17:44:10,346: Identified candidate component class: file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/file-hdfs-provider/target/classes/hdfs/AZ_HDFS_FilePorvider.class]
+2017-01-07 17:44:10,461: Loading XML bean definitions from URL [file:/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/spring.xml]
+2017-01-07 17:44:10,479: Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+2017-01-07 17:44:10,485: Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+2017-01-07 17:44:10,550: Found XML schema [http://www.springframework.org/schema/aop/spring-aop.xsd] in classpath: org/springframework/aop/config/spring-aop-3.2.xsd
+2017-01-07 17:44:10,557: Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.2.xsd
+2017-01-07 17:44:10,573: Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+2017-01-07 17:44:10,586: Loading bean definitions
+2017-01-07 17:44:10,700: Looking for matching resources in directory tree [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework]
+2017-01-07 17:44:10,700: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/**/*.class]
+2017-01-07 17:44:10,701: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/annotation] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/**/*.class]
+2017-01-07 17:44:10,702: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/bean] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/**/*.class]
+2017-01-07 17:44:10,703: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/interfaces] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/**/*.class]
+2017-01-07 17:44:10,715: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/security] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/**/*.class]
+2017-01-07 17:44:10,717: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/service] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/**/*.class]
+2017-01-07 17:44:10,721: Searching directory [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/util] for files matching pattern [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/**/*.class]
+2017-01-07 17:44:10,726: Resolved location pattern [classpath*:common/framework/**/*.class] to resources [file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/annotation/AS_AspectBean.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/annotation/AZ_Aspect.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/annotation/AZ_AspectLog.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/annotation/AZ_LogMethod.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/bean/AZ_BusinessException.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/bean/AZ_ResultEntity.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/interfaces/AZ_AnnotationAspectLog.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/interfaces/BeanCopy.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/security/AESUtil.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/security/Base64Util.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/security/DESUtil.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/security/MD5Util.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/security/RSAUtil.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/security/SecurityCoder.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/service/AZ_ENV.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/util/ByteUtils.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/util/IOUtils.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/util/JsonUtil.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/util/ListUtils.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/util/ObjectUtils.class], file [/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes/common/framework/util/StringUtils.class]]
+2017-01-07 17:44:10,791: Loaded 1 bean definitions from location pattern [classpath*:spring.xml]
+2017-01-07 17:44:10,792: Imported 1 bean definitions from URL location [classpath*:spring.xml]
+2017-01-07 17:44:10,795: Loading XML bean definitions from class path resource [META-INF/spring/spring-bean.xml]
+2017-01-07 17:44:10,812: Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+2017-01-07 17:44:10,817: Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+2017-01-07 17:44:10,851: Loading bean definitions
+2017-01-07 17:44:10,852: Loaded 0 bean definitions from location pattern [classpath:META-INF/spring/spring-bean.xml]
+2017-01-07 17:44:10,852: Imported 0 bean definitions from URL location [classpath:META-INF/spring/spring-bean.xml]
+2017-01-07 17:44:10,852: Loading XML bean definitions from class path resource [META-INF/dubbo/dubbo-provider.xml]
+2017-01-07 17:44:10,862: Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+2017-01-07 17:44:10,864: Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.2.xsd
+2017-01-07 17:44:10,952: Found XML schema [http://code.alibabatech.com/schema/dubbo/dubbo.xsd] in classpath: META-INF/dubbo.xsd
+2017-01-07 17:44:11,043: Loading bean definitions
+2017-01-07 17:44:11,073: using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2017-01-07 17:44:11,352: Loaded 5 bean definitions from location pattern [classpath:META-INF/dubbo/dubbo-provider.xml]
+2017-01-07 17:44:11,352: Imported 5 bean definitions from URL location [classpath:META-INF/dubbo/dubbo-provider.xml]
+2017-01-07 17:44:11,352: Loading XML bean definitions from class path resource [META-INF/others/hdfs.xml]
+2017-01-07 17:44:11,363: Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+2017-01-07 17:44:11,375: Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+2017-01-07 17:44:11,402: Found XML schema [http://www.springframework.org/schema/context/spring-context-3.0.xsd] in classpath: org/springframework/context/config/spring-context-3.0.xsd
+2017-01-07 17:44:11,408: Found XML schema [http://www.springframework.org/schema/tool/spring-tool-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-3.0.xsd
+2017-01-07 17:44:11,417: Loading bean definitions
+2017-01-07 17:44:11,425: No XML 'id' specified - using 'azHdfsFilePorvider' as bean name and [] as aliases
+2017-01-07 17:44:11,434: Loaded 2 bean definitions from location pattern [classpath:META-INF/others/hdfs.xml]
+2017-01-07 17:44:11,435: Imported 2 bean definitions from URL location [classpath:META-INF/others/hdfs.xml]
+2017-01-07 17:44:11,435: Loaded 13 bean definitions from location pattern [classpath*:META-INF/spring/spring.xml]
+2017-01-07 17:44:11,440: Refreshing org.springframework.context.support.GenericApplicationContext@71f31c4e: startup date [Sat Jan 07 17:44:11 CST 2017]; root of context hierarchy
+2017-01-07 17:44:11,440: Bean factory for org.springframework.context.support.GenericApplicationContext@71f31c4e: org.springframework.beans.factory.support.DefaultListableBeanFactory@5fb42753: defining beans [AZ_HDFS_FilePorvider,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,hdfs-provider,com.alibaba.dubbo.config.RegistryConfig,dubbo,hessian,fileapi.AZ_FileApi,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,azHdfsFilePorvider]; root of factory hierarchy
+2017-01-07 17:44:11,520: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-01-07 17:44:11,521: Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-01-07 17:44:11,562: Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2017-01-07 17:44:11,573: Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-01-07 17:44:11,740: Creating shared instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+2017-01-07 17:44:11,740: Creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+2017-01-07 17:44:11,743: Eagerly caching bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0' to allow for resolving potential circular references
+2017-01-07 17:44:11,893: Finished creating instance of bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+2017-01-07 17:44:11,894: Loading properties file from URL [file:/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-config-util/target/classes/hdfs.properties]
+2017-01-07 17:44:11,921: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-01-07 17:44:11,921: Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-01-07 17:44:11,923: Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2017-01-07 17:44:11,923: Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-01-07 17:44:11,924: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-01-07 17:44:11,924: Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-01-07 17:44:11,925: Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2017-01-07 17:44:11,926: Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-01-07 17:44:11,927: Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-01-07 17:44:11,927: Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-01-07 17:44:11,939: Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2017-01-07 17:44:11,939: Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-01-07 17:44:11,940: Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-01-07 17:44:11,940: Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-01-07 17:44:11,940: Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2017-01-07 17:44:11,940: Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-01-07 17:44:11,943: Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2017-01-07 17:44:11,947: Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2017-01-07 17:44:11,992: Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+2017-01-07 17:44:12,051: Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2017-01-07 17:44:12,071: Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@6fec82b1]
+2017-01-07 17:44:12,075: Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@49bf32f3]
+2017-01-07 17:44:12,079: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5fb42753: defining beans [AZ_HDFS_FilePorvider,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,hdfs-provider,com.alibaba.dubbo.config.RegistryConfig,dubbo,hessian,fileapi.AZ_FileApi,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,azHdfsFilePorvider,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-01-07 17:44:12,079: Creating shared instance of singleton bean 'AZ_HDFS_FilePorvider'
+2017-01-07 17:44:12,082: Creating instance of bean 'AZ_HDFS_FilePorvider'
+2017-01-07 17:44:12,141: Eagerly caching bean 'AZ_HDFS_FilePorvider' to allow for resolving potential circular references
+2017-01-07 17:44:12,156: Finished creating instance of bean 'AZ_HDFS_FilePorvider'
+2017-01-07 17:44:12,157: Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-01-07 17:44:12,159: Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-01-07 17:44:12,160: Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-01-07 17:44:12,161: Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-01-07 17:44:12,162: Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2017-01-07 17:44:12,162: Creating shared instance of singleton bean 'hdfs-provider'
+2017-01-07 17:44:12,163: Creating instance of bean 'hdfs-provider'
+2017-01-07 17:44:12,173: Eagerly caching bean 'hdfs-provider' to allow for resolving potential circular references
+2017-01-07 17:44:12,193: Finished creating instance of bean 'hdfs-provider'
+2017-01-07 17:44:12,197: Creating shared instance of singleton bean 'com.alibaba.dubbo.config.RegistryConfig'
+2017-01-07 17:44:12,198: Creating instance of bean 'com.alibaba.dubbo.config.RegistryConfig'
+2017-01-07 17:44:12,209: Eagerly caching bean 'com.alibaba.dubbo.config.RegistryConfig' to allow for resolving potential circular references
+2017-01-07 17:44:12,232: Finished creating instance of bean 'com.alibaba.dubbo.config.RegistryConfig'
+2017-01-07 17:44:12,233: Creating shared instance of singleton bean 'dubbo'
+2017-01-07 17:44:12,234: Creating instance of bean 'dubbo'
+2017-01-07 17:44:12,244: Eagerly caching bean 'dubbo' to allow for resolving potential circular references
+2017-01-07 17:44:12,277: Finished creating instance of bean 'dubbo'
+2017-01-07 17:44:12,278: Creating shared instance of singleton bean 'hessian'
+2017-01-07 17:44:12,278: Creating instance of bean 'hessian'
+2017-01-07 17:44:12,291: Eagerly caching bean 'hessian' to allow for resolving potential circular references
+2017-01-07 17:44:12,294: Finished creating instance of bean 'hessian'
+2017-01-07 17:44:12,294: Creating shared instance of singleton bean 'fileapi.AZ_FileApi'
+2017-01-07 17:44:12,295: Creating instance of bean 'fileapi.AZ_FileApi'
+2017-01-07 17:44:12,305:  [DUBBO] package com.alibaba.dubbo.rpc;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Protocol$Adpative implements com.alibaba.dubbo.rpc.Protocol {
+public void destroy() {throw new UnsupportedOperationException("method public abstract void com.alibaba.dubbo.rpc.Protocol.destroy() of interface com.alibaba.dubbo.rpc.Protocol is not adaptive method!");
+}
+public int getDefaultPort() {throw new UnsupportedOperationException("method public abstract int com.alibaba.dubbo.rpc.Protocol.getDefaultPort() of interface com.alibaba.dubbo.rpc.Protocol is not adaptive method!");
+}
+public com.alibaba.dubbo.rpc.Invoker refer(java.lang.Class arg0, com.alibaba.dubbo.common.URL arg1) throws java.lang.Class {
+if (arg1 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg1;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.Protocol) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.Protocol extension = (com.alibaba.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.refer(arg0, arg1);
+}
+public com.alibaba.dubbo.rpc.Exporter export(com.alibaba.dubbo.rpc.Invoker arg0) throws com.alibaba.dubbo.rpc.Invoker {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.Protocol) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.Protocol extension = (com.alibaba.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.export(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:12,535:  [DUBBO] package com.alibaba.dubbo.rpc;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ProxyFactory$Adpative implements com.alibaba.dubbo.rpc.ProxyFactory {
+public java.lang.Object getProxy(com.alibaba.dubbo.rpc.Invoker arg0) throws com.alibaba.dubbo.rpc.Invoker {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.Invoker argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.ProxyFactory) name from url(" + url.toString() + ") use keys([proxy])");
+com.alibaba.dubbo.rpc.ProxyFactory extension = (com.alibaba.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getProxy(arg0);
+}
+public com.alibaba.dubbo.rpc.Invoker getInvoker(java.lang.Object arg0, java.lang.Class arg1, com.alibaba.dubbo.common.URL arg2) throws java.lang.Object {
+if (arg2 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg2;
+String extName = url.getParameter("proxy", "javassist");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.ProxyFactory) name from url(" + url.toString() + ") use keys([proxy])");
+com.alibaba.dubbo.rpc.ProxyFactory extension = (com.alibaba.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getInvoker(arg0, arg1, arg2);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:12,562: Eagerly caching bean 'fileapi.AZ_FileApi' to allow for resolving potential circular references
+2017-01-07 17:44:12,589: Creating shared instance of singleton bean 'azHdfsFilePorvider'
+2017-01-07 17:44:12,590: Creating instance of bean 'azHdfsFilePorvider'
+2017-01-07 17:44:12,590: Eagerly caching bean 'azHdfsFilePorvider' to allow for resolving potential circular references
+2017-01-07 17:44:12,591: Invoking init method  'init' on bean with name 'azHdfsFilePorvider'
+2017-01-07 17:44:12,866: setsid is not available on this machine. So not using it.
+2017-01-07 17:44:12,867: setsid exited with exit code 0
+2017-01-07 17:44:12,930: field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginSuccess with annotation @org.apache.hadoop.metrics2.annotation.Metric(valueName=Time, about=, value=[Rate of successful kerberos logins and latency (milliseconds)], always=false, type=DEFAULT, sampleName=Ops)
+2017-01-07 17:44:12,943: field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.loginFailure with annotation @org.apache.hadoop.metrics2.annotation.Metric(valueName=Time, about=, value=[Rate of failed kerberos logins and latency (milliseconds)], always=false, type=DEFAULT, sampleName=Ops)
+2017-01-07 17:44:12,944: field org.apache.hadoop.metrics2.lib.MutableRate org.apache.hadoop.security.UserGroupInformation$UgiMetrics.getGroups with annotation @org.apache.hadoop.metrics2.annotation.Metric(valueName=Time, about=, value=[GetGroups], always=false, type=DEFAULT, sampleName=Ops)
+2017-01-07 17:44:12,946: UgiMetrics, User and group related metrics
+2017-01-07 17:44:18,054: Kerberos krb5 configuration not found, setting default realm to empty
+2017-01-07 17:44:18,060:  Creating new Groups object
+2017-01-07 17:44:18,062: Trying to load the custom-built native-hadoop library...
+2017-01-07 17:44:18,063: Failed to load native-hadoop with error: java.lang.UnsatisfiedLinkError: no hadoop in java.library.path
+2017-01-07 17:44:18,063: java.library.path=/Users/Fuzhong.Yan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2017-01-07 17:44:18,064: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2017-01-07 17:44:18,064: Falling back to shell based
+2017-01-07 17:44:18,065: Group mapping impl=org.apache.hadoop.security.ShellBasedUnixGroupsMapping
+2017-01-07 17:44:18,098: Group mapping impl=org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback; cacheTimeout=300000; warningDeltaMs=5000
+2017-01-07 17:44:18,103: hadoop login
+2017-01-07 17:44:18,103: hadoop login commit
+2017-01-07 17:44:18,107: using local user:UnixPrincipal: Fuzhong.Yan
+2017-01-07 17:44:18,107: Using user: "UnixPrincipal: Fuzhong.Yan" with name Fuzhong.Yan
+2017-01-07 17:44:18,108: User entry: "Fuzhong.Yan"
+2017-01-07 17:44:18,108: UGI loginUser:Fuzhong.Yan (auth:SIMPLE)
+2017-01-07 17:44:18,505: dfs.client.use.legacy.blockreader.local = false
+2017-01-07 17:44:18,506: dfs.client.read.shortcircuit = false
+2017-01-07 17:44:18,506: dfs.client.domain.socket.data.traffic = false
+2017-01-07 17:44:18,506: dfs.domain.socket.path = 
+2017-01-07 17:44:18,554: multipleLinearRandomRetry = null
+2017-01-07 17:44:18,576: rpcKind=RPC_PROTOCOL_BUFFER, rpcRequestWrapperClass=class org.apache.hadoop.ipc.ProtobufRpcEngine$RpcRequestWrapper, rpcInvoker=org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker@3784dc10
+2017-01-07 17:44:18,595: getting client out of cache: org.apache.hadoop.ipc.Client@7735810c
+2017-01-07 17:44:19,054: Both short-circuit local reads and UNIX domain socket are disabled.
+2017-01-07 17:44:19,061: DataTransferProtocol not using SaslPropertiesResolver, no QOP found in configuration for dfs.data.transfer.protection
+2017-01-07 17:44:19,062: Finished creating instance of bean 'azHdfsFilePorvider'
+2017-01-07 17:44:19,063: Returning cached instance of singleton bean 'hessian'
+2017-01-07 17:44:19,065: Invoking afterPropertiesSet() on bean with name 'fileapi.AZ_FileApi'
+2017-01-07 17:44:19,065: Returning cached instance of singleton bean 'hdfs-provider'
+2017-01-07 17:44:19,067: Returning cached instance of singleton bean 'com.alibaba.dubbo.config.RegistryConfig'
+2017-01-07 17:44:19,067: Finished creating instance of bean 'fileapi.AZ_FileApi'
+2017-01-07 17:44:19,067: Returning cached instance of singleton bean 'org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0'
+2017-01-07 17:44:19,068: Returning cached instance of singleton bean 'azHdfsFilePorvider'
+2017-01-07 17:44:19,068: Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-01-07 17:44:19,071: Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@6c3355f2]
+2017-01-07 17:44:19,071: Returning cached instance of singleton bean 'lifecycleProcessor'
+2017-01-07 17:44:19,073: Returning cached instance of singleton bean 'fileapi.AZ_FileApi'
+2017-01-07 17:44:19,074:  [DUBBO] The service ready on spring started. service: fileapi.AZ_FileApi, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:19,093:  [DUBBO] package com.alibaba.dubbo.remoting.http;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class HttpBinder$Adpative implements com.alibaba.dubbo.remoting.http.HttpBinder {
+public com.alibaba.dubbo.remoting.http.HttpServer bind(com.alibaba.dubbo.common.URL arg0, com.alibaba.dubbo.remoting.http.HttpHandler arg1) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("server", "jetty");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.http.HttpBinder) name from url(" + url.toString() + ") use keys([server])");
+com.alibaba.dubbo.remoting.http.HttpBinder extension = (com.alibaba.dubbo.remoting.http.HttpBinder)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.http.HttpBinder.class).getExtension(extName);
+return extension.bind(arg0, arg1);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:19,236:  [DUBBO] package com.alibaba.dubbo.validation;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Validation$Adpative implements com.alibaba.dubbo.validation.Validation {
+public com.alibaba.dubbo.validation.Validator getValidator(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("validation", "jvalidation");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.validation.Validation) name from url(" + url.toString() + ") use keys([validation])");
+com.alibaba.dubbo.validation.Validation extension = (com.alibaba.dubbo.validation.Validation)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.validation.Validation.class).getExtension(extName);
+return extension.getValidator(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:19,252:  [DUBBO] package com.alibaba.dubbo.monitor;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class MonitorFactory$Adpative implements com.alibaba.dubbo.monitor.MonitorFactory {
+public com.alibaba.dubbo.monitor.Monitor getMonitor(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.monitor.MonitorFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.monitor.MonitorFactory extension = (com.alibaba.dubbo.monitor.MonitorFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.monitor.MonitorFactory.class).getExtension(extName);
+return extension.getMonitor(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:19,282:  [DUBBO] package com.alibaba.dubbo.cache;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class CacheFactory$Adpative implements com.alibaba.dubbo.cache.CacheFactory {
+public com.alibaba.dubbo.cache.Cache getCache(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("cache", "lru");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.cache.CacheFactory) name from url(" + url.toString() + ") use keys([cache])");
+com.alibaba.dubbo.cache.CacheFactory extension = (com.alibaba.dubbo.cache.CacheFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.cache.CacheFactory.class).getExtension(extName);
+return extension.getCache(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:19,312:  [DUBBO] Export dubbo service fileapi.AZ_FileApi to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:19,313:  [DUBBO] Export dubbo service fileapi.AZ_FileApi to url hessian://192.168.0.114:20887/file/hdfs?anyhost=true&application=hdfs-provider&dubbo=2.5.3&interface=fileapi.AZ_FileApi&methods=appendInputStream,readInputStream,download,writeBytes,close,open,appendBytes,write,read,readBytesByFileName,readBytes,deleteFile&pid=65107&server=jetty&side=provider&timeout=1024&timestamp=1483782259110, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:19,313:  [DUBBO] Register dubbo service fileapi.AZ_FileApi url hessian://192.168.0.114:20887/file/hdfs?anyhost=true&application=hdfs-provider&dubbo=2.5.3&interface=fileapi.AZ_FileApi&methods=appendInputStream,readInputStream,download,writeBytes,close,open,appendBytes,write,read,readBytesByFileName,readBytes,deleteFile&pid=65107&server=jetty&side=provider&timeout=1024&timestamp=1483782259110 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=hdfs-provider&dubbo=2.5.3&pid=65107&registry=zookeeper&timestamp=1483782259082, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:19,327:  [DUBBO] package com.alibaba.dubbo.registry;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class RegistryFactory$Adpative implements com.alibaba.dubbo.registry.RegistryFactory {
+public com.alibaba.dubbo.registry.Registry getRegistry(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? "dubbo" : url.getProtocol() );
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.registry.RegistryFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.registry.RegistryFactory extension = (com.alibaba.dubbo.registry.RegistryFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.registry.RegistryFactory.class).getExtension(extName);
+return extension.getRegistry(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:19,360:  [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Cluster$Adpative implements com.alibaba.dubbo.rpc.cluster.Cluster {
+public com.alibaba.dubbo.rpc.Invoker join(com.alibaba.dubbo.rpc.cluster.Directory arg0) throws com.alibaba.dubbo.rpc.cluster.Directory {
+if (arg0 == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.cluster.Directory argument == null");
+if (arg0.getUrl() == null) throw new IllegalArgumentException("com.alibaba.dubbo.rpc.cluster.Directory argument getUrl() == null");com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter("cluster", "failover");
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.Cluster) name from url(" + url.toString() + ") use keys([cluster])");
+com.alibaba.dubbo.rpc.cluster.Cluster extension = (com.alibaba.dubbo.rpc.cluster.Cluster)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.Cluster.class).getExtension(extName);
+return extension.join(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:19,445: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2017-01-07 17:44:19,445: Container Server@51694079 + org.mortbay.thread.QueuedThreadPool@3605534e as threadpool
+2017-01-07 17:44:19,446: Container Server@51694079 + SelectChannelConnector@0.0.0.0:20887 as connector
+2017-01-07 17:44:19,458: filterNameMap=null
+2017-01-07 17:44:19,459: pathFilters=null
+2017-01-07 17:44:19,459: servletFilterMap=null
+2017-01-07 17:44:19,459: servletPathMap={/*=com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet-536871670}
+2017-01-07 17:44:19,459: servletNameMap={com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet-536871670=com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet-536871670}
+2017-01-07 17:44:19,459: Container Server@51694079 + ServletHandler@1b1eaf88 as handler
+2017-01-07 17:44:19,460: Container ServletHandler@1b1eaf88 + com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet-536871670 as servlet
+2017-01-07 17:44:19,460: Container ServletHandler@1b1eaf88 + com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet-536871670 as servlet
+2017-01-07 17:44:19,460: Container ServletHandler@1b1eaf88 + (S=com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet-536871670,[/*]) as servletMapping
+2017-01-07 17:44:19,460: jetty-6.1.26
+2017-01-07 17:44:19,564: started org.mortbay.thread.QueuedThreadPool@3605534e
+2017-01-07 17:44:19,571: filterNameMap=null
+2017-01-07 17:44:19,572: pathFilters=null
+2017-01-07 17:44:19,573: servletFilterMap=null
+2017-01-07 17:44:19,574: servletPathMap={/*=com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet-536871670}
+2017-01-07 17:44:19,574: servletNameMap={com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet-536871670=com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet-536871670}
+2017-01-07 17:44:19,575: starting ServletHandler@1b1eaf88
+2017-01-07 17:44:19,591: started com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet-536871670
+2017-01-07 17:44:19,591: started ServletHandler@1b1eaf88
+2017-01-07 17:44:19,591: starting Server@51694079
+2017-01-07 17:44:19,611: started org.mortbay.jetty.nio.SelectChannelConnector$1@55b0bd3d
+2017-01-07 17:44:19,630: Started SelectChannelConnector@0.0.0.0:20887
+2017-01-07 17:44:19,631: started SelectChannelConnector@0.0.0.0:20887
+2017-01-07 17:44:19,631: started Server@51694079
+2017-01-07 17:44:19,716:  [DUBBO] package com.alibaba.dubbo.remoting.zookeeper;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ZookeeperTransporter$Adpative implements com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter {
+public com.alibaba.dubbo.remoting.zookeeper.ZookeeperClient connect(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter("client", url.getParameter("transporter", "zkclient"));
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter) name from url(" + url.toString() + ") use keys([client, transporter])");
+com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter extension = (com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter.class).getExtension(extName);
+return extension.connect(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:19,748:  [DUBBO] Load registry store file /Users/Fuzhong.Yan/.dubbo/dubbo-registry-127.0.0.1.cache, data: {com.alibaba.dubbo.demo.DemoService=empty://192.168.0.101:20880/com.alibaba.dubbo.demo.DemoService?anyhost=true&application=hello-world-app&category=configurators&check=false&dubbo=2.5.2&interface=com.alibaba.dubbo.demo.DemoService&methods=sayHello,getUsers&pid=1069&side=provider&timestamp=1469462050451, api.TestInterface=empty://192.168.0.101:20880/api.TestInterface?anyhost=true&application=xixi_provider&category=configurators&check=false&dubbo=2.5.2&interface=api.TestInterface&methods=*&pid=1635&side=provider&timestamp=1469631169636, fileapi.AZ_FileApi=empty://192.168.0.114:20887/file/hdfs?anyhost=true&application=hdfs-provider&category=configurators&check=false&dubbo=2.5.3&interface=fileapi.AZ_FileApi&methods=appendInputStream,readInputStream,download,writeBytes,close,open,appendBytes,write,read,readBytesByFileName,readBytes,deleteFile&pid=65101&server=jetty&side=provider&timeout=1024&timestamp=1483782221952, sysconfig.AZ_SysconfigApi=empty://192.168.0.100:20880/sysconfig.AZ_SysconfigApi?anyhost=true&application=sysconfig_provider&category=configurators&check=false&dubbo=2.5.3&interface=sysconfig.AZ_SysconfigApi&methods=getMenus,getAllMenus&pid=1130&side=provider&timestamp=1477917371006}, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:19,770: Creating new ZookKeeper instance to connect to 127.0.0.1:2181.
+2017-01-07 17:44:19,770: Starting ZkClient event thread.
+2017-01-07 17:44:19,791: Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+2017-01-07 17:44:19,792: Client environment:host.name=192.168.0.114
+2017-01-07 17:44:19,792: Client environment:java.version=1.7.0_45
+2017-01-07 17:44:19,792: Client environment:java.vendor=Oracle Corporation
+2017-01-07 17:44:19,793: Client environment:java.home=/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre
+2017-01-07 17:44:19,793: Client environment:java.class.path=/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit-rt.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/JObjC.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/charsets.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/deploy.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/ext/dnsns.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/ext/localedata.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/ext/sunec.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/ext/sunjce_provider.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/ext/sunpkcs11.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/ext/zipfs.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/htmlconverter.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/javaws.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/jce.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/jfr.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/jfxrt.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/jsse.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/management-agent.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/plugin.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/resources.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/jre/lib/rt.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/lib/ant-javafx.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/lib/dt.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/lib/javafx-doclet.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/lib/javafx-mx.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/lib/jconsole.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/lib/sa-jdi.jar:/Users/Fuzhong.Yan/userENV/ENV/java_jdk_1.7.0_45/lib/tools.jar:/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/file-hdfs-provider/target/test-classes:/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/file-hdfs-provider/target/classes:/Users/Fuzhong.Yan/userENV/repository/org/apache/hadoop/hadoop-client/2.7.3/hadoop-client-2.7.3.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/hadoop/hadoop-common/2.7.3/hadoop-common-2.7.3.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/hadoop/hadoop-annotations/2.7.3/hadoop-annotations-2.7.3.jar:/Users/Fuzhong.Yan/userENV/repository/com/google/guava/guava/11.0.2/guava-11.0.2.jar:/Users/Fuzhong.Yan/userENV/repository/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.jar:/Users/Fuzhong.Yan/userENV/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/commons/commons-math3/3.1.1/commons-math3-3.1.1.jar:/Users/Fuzhong.Yan/userENV/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar:/Users/Fuzhong.Yan/userENV/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/Users/Fuzhong.Yan/userENV/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/Fuzhong.Yan/userENV/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/Users/Fuzhong.Yan/userENV/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/Fuzhong.Yan/userENV/repository/commons-net/commons-net/3.1/commons-net-3.1.jar:/Users/Fuzhong.Yan/userENV/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/Fuzhong.Yan/userENV/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar:/Users/Fuzhong.Yan/userENV/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/Fuzhong.Yan/userENV/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/Fuzhong.Yan/userENV/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/Users/Fuzhong.Yan/userENV/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/Users/Fuzhong.Yan/userENV/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar:/Users/Fuzhong.Yan/userENV/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar:/Users/Fuzhong.Yan/userENV/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar:/Users/Fuzhong.Yan/userENV/repository/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar:/Users/Fuzhong.Yan/userENV/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar:/Users/Fuzhong.Yan/userENV/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/avro/avro/1.7.4/avro-1.7.4.jar:/Users/Fuzhong.Yan/userENV/repository/com/thoughtworks/paranamer/paranamer/2.3/paranamer-2.3.jar:/Users/Fuzhong.Yan/userENV/repository/org/xerial/snappy/snappy-java/1.0.4.1/snappy-java-1.0.4.1.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar:/Users/Fuzhong.Yan/userENV/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/Fuzhong.Yan/userENV/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/hadoop/hadoop-auth/2.7.3/hadoop-auth-2.7.3.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/httpcomponents/httpcore/4.2.4/httpcore-4.2.4.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/curator/curator-framework/2.7.1/curator-framework-2.7.1.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/curator/curator-client/2.7.1/curator-client-2.7.1.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/curator/curator-recipes/2.7.1/curator-recipes-2.7.1.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/htrace/htrace-core/3.1.0-incubating/htrace-core-3.1.0-incubating.jar:/Users/Fuzhong.Yan/userENV/repository/org/tukaani/xz/1.0/xz-1.0.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/hadoop/hadoop-hdfs/2.7.3/hadoop-hdfs-2.7.3.jar:/Users/Fuzhong.Yan/userENV/repository/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar:/Users/Fuzhong.Yan/userENV/repository/io/netty/netty/3.7.0.Final/netty-3.7.0.Final.jar:/Users/Fuzhong.Yan/userENV/repository/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.jar:/Users/Fuzhong.Yan/userENV/repository/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar:/Users/Fuzhong.Yan/userENV/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar:/Users/Fuzhong.Yan/userENV/repository/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/hadoop/hadoop-mapreduce-client-app/2.7.3/hadoop-mapreduce-client-app-2.7.3.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/hadoop/hadoop-mapreduce-client-common/2.7.3/hadoop-mapreduce-client-common-2.7.3.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/hadoop/hadoop-yarn-common/2.7.3/hadoop-yarn-common-2.7.3.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/hadoop/hadoop-yarn-client/2.7.3/hadoop-yarn-client-2.7.3.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/hadoop/hadoop-yarn-api/2.7.3/hadoop-yarn-api-2.7.3.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.7.3/hadoop-mapreduce-client-core-2.7.3.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/hadoop/hadoop-yarn-server-common/2.7.3/hadoop-yarn-server-common-2.7.3.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.7.3/hadoop-mapreduce-client-shuffle-2.7.3.jar:/Users/Fuzhong.Yan/userENV/repository/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar:/Users/Fuzhong.Yan/userENV/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar:/Users/Fuzhong.Yan/userENV/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/Fuzhong.Yan/userENV/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar:/Users/Fuzhong.Yan/userENV/repository/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar:/Users/Fuzhong.Yan/userENV/repository/com/sun/jersey/jersey-client/1.9/jersey-client-1.9.jar:/Users/Fuzhong.Yan/userENV/repository/org/codehaus/jackson/jackson-jaxrs/1.9.13/jackson-jaxrs-1.9.13.jar:/Users/Fuzhong.Yan/userENV/repository/org/codehaus/jackson/jackson-xc/1.9.13/jackson-xc-1.9.13.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.7.3/hadoop-mapreduce-client-jobclient-2.7.3.jar:/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-config-util/target/classes:/Users/Fuzhong.Yan/userENV/repository/org/springframework/spring-aop/3.2.16.RELEASE/spring-aop-3.2.16.RELEASE.jar:/Users/Fuzhong.Yan/userENV/repository/org/springframework/spring-beans/3.2.16.RELEASE/spring-beans-3.2.16.RELEASE.jar:/Users/Fuzhong.Yan/userENV/repository/org/springframework/spring-context/3.2.16.RELEASE/spring-context-3.2.16.RELEASE.jar:/Users/Fuzhong.Yan/userENV/repository/org/springframework/spring-context-support/3.2.16.RELEASE/spring-context-support-3.2.16.RELEASE.jar:/Users/Fuzhong.Yan/userENV/repository/org/springframework/spring-core/3.2.16.RELEASE/spring-core-3.2.16.RELEASE.jar:/Users/Fuzhong.Yan/userENV/repository/org/springframework/spring-expression/3.2.16.RELEASE/spring-expression-3.2.16.RELEASE.jar:/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/file-api/target/classes:/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-util/target/classes:/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/common-constant-util/target/classes:/Users/Fuzhong.Yan/userENV/repository/org/aspectj/aspectjrt/1.8.9/aspectjrt-1.8.9.jar:/Users/Fuzhong.Yan/userENV/repository/org/aspectj/aspectjweaver/1.6.12/aspectjweaver-1.6.12.jar:/Users/Fuzhong.Yan/userENV/repository/cglib/cglib/3.2.4/cglib-3.2.4.jar:/Users/Fuzhong.Yan/userENV/repository/org/ow2/asm/asm/5.1/asm-5.1.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/ant/ant/1.9.6/ant-1.9.6.jar:/Users/Fuzhong.Yan/userENV/repository/org/apache/ant/ant-launcher/1.9.6/ant-launcher-1.9.6.jar:/Users/Fuzhong.Yan/userENV/repository/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar:/Users/Fuzhong.Yan/userENV/repository/org/javassist/javassist/3.15.0-GA/javassist-3.15.0-GA.jar:/Users/Fuzhong.Yan/userENV/repository/org/jboss/netty/netty/3.2.5.Final/netty-3.2.5.Final.jar:/Users/Fuzhong.Yan/userENV/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/Fuzhong.Yan/userENV/repository/junit/junit/4.9/junit-4.9.jar:/Users/Fuzhong.Yan/userENV/repository/com/github/sgroschupf/zkclient/0.1/zkclient-0.1.jar:/Users/Fuzhong.Yan/userENV/repository/com/caucho/hessian/4.0.7/hessian-4.0.7.jar:/Users/Fuzhong.Yan/userENV/repository/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.jar:/Users/Fuzhong.Yan/userENV/repository/org/mortbay/jetty/servlet-api/2.5-20081211/servlet-api-2.5-20081211.jar:/Users/Fuzhong.Yan/userENV/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/Fuzhong.Yan/userENV/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/Fuzhong.Yan/userENV/repository/org/springframework/spring-test/3.2.16.RELEASE/spring-test-3.2.16.RELEASE.jar
+2017-01-07 17:44:19,793: Client environment:java.library.path=/Users/Fuzhong.Yan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2017-01-07 17:44:19,794: Client environment:java.io.tmpdir=/var/folders/4h/r79jn4b54zs98bs8c89zc1j40000gp/T/
+2017-01-07 17:44:19,794: Client environment:java.compiler=<NA>
+2017-01-07 17:44:19,794: Client environment:os.name=Mac OS X
+2017-01-07 17:44:19,794: Client environment:os.arch=x86_64
+2017-01-07 17:44:19,794: Client environment:os.version=10.10.3
+2017-01-07 17:44:19,794: Client environment:user.name=Fuzhong.Yan
+2017-01-07 17:44:19,795: Client environment:user.home=/Users/Fuzhong.Yan
+2017-01-07 17:44:19,795: Client environment:user.dir=/Users/Fuzhong.Yan/Fuzhong.Yan/github/azproject/file-hdfs-provider
+2017-01-07 17:44:19,797: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@4a5a74a7
+2017-01-07 17:44:19,807: zookeeper.disableAutoWatchReset is false
+2017-01-07 17:44:19,827: Awaiting connection to Zookeeper server
+2017-01-07 17:44:19,828: Waiting for keeper state SyncConnected
+2017-01-07 17:44:19,838: Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2017-01-07 17:44:19,846: Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2017-01-07 17:44:19,850: Session establishment request sent on 127.0.0.1/127.0.0.1:2181
+2017-01-07 17:44:19,862: Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x1593025010500e9, negotiated timeout = 30000
+2017-01-07 17:44:19,866: Received event: WatchedEvent state:SyncConnected type:None path:null
+2017-01-07 17:44:19,867: zookeeper state changed (SyncConnected)
+2017-01-07 17:44:19,867: Leaving process event
+2017-01-07 17:44:19,867: State is SyncConnected
+2017-01-07 17:44:19,874:  [DUBBO] Register: hessian://192.168.0.114:20887/file/hdfs?anyhost=true&application=hdfs-provider&dubbo=2.5.3&interface=fileapi.AZ_FileApi&methods=appendInputStream,readInputStream,download,writeBytes,close,open,appendBytes,write,read,readBytesByFileName,readBytes,deleteFile&pid=65107&server=jetty&side=provider&timeout=1024&timestamp=1483782259110, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:19,895: Reading reply sessionid:0x1593025010500e9, packet:: clientPath:null serverPath:null finished:false header:: 1,1  replyHeader:: 1,2747,-110  request:: '/dubbo,,v{s{31,s{'world,'anyone}}},0  response::  
+2017-01-07 17:44:19,938: Reading reply sessionid:0x1593025010500e9, packet:: clientPath:null serverPath:null finished:false header:: 2,1  replyHeader:: 2,2748,-110  request:: '/dubbo/fileapi.AZ_FileApi,,v{s{31,s{'world,'anyone}}},0  response::  
+2017-01-07 17:44:19,963: Reading reply sessionid:0x1593025010500e9, packet:: clientPath:null serverPath:null finished:false header:: 3,1  replyHeader:: 3,2749,-110  request:: '/dubbo/fileapi.AZ_FileApi/providers,,v{s{31,s{'world,'anyone}}},0  response::  
+2017-01-07 17:44:19,966: Reading reply sessionid:0x1593025010500e9, packet:: clientPath:null serverPath:null finished:false header:: 4,1  replyHeader:: 4,2750,0  request:: '/dubbo/fileapi.AZ_FileApi/providers/hessian%253A%252F%252F192.168.0.114%253A20887%252Ffile%252Fhdfs%253Fanyhost%253Dtrue%2526application%253Dhdfs-provider%2526dubbo%253D2.5.3%2526interface%253Dfileapi.AZ_FileApi%2526methods%253DappendInputStream%252CreadInputStream%252Cdownload%252CwriteBytes%252Cclose%252Copen%252CappendBytes%252Cwrite%252Cread%252CreadBytesByFileName%252CreadBytes%252CdeleteFile%2526pid%253D65107%2526server%253Djetty%2526side%253Dprovider%2526timeout%253D1024%2526timestamp%253D1483782259110,,v{s{31,s{'world,'anyone}}},1  response:: '/dubbo/fileapi.AZ_FileApi/providers/hessian%253A%252F%252F192.168.0.114%253A20887%252Ffile%252Fhdfs%253Fanyhost%253Dtrue%2526application%253Dhdfs-provider%2526dubbo%253D2.5.3%2526interface%253Dfileapi.AZ_FileApi%2526methods%253DappendInputStream%252CreadInputStream%252Cdownload%252CwriteBytes%252Cclose%252Copen%252CappendBytes%252Cwrite%252Cread%252CreadBytesByFileName%252CreadBytes%252CdeleteFile%2526pid%253D65107%2526server%253Djetty%2526side%253Dprovider%2526timeout%253D1024%2526timestamp%253D1483782259110 
+2017-01-07 17:44:19,967:  [DUBBO] Subscribe: provider://192.168.0.114:20887/file/hdfs?anyhost=true&application=hdfs-provider&category=configurators&check=false&dubbo=2.5.3&interface=fileapi.AZ_FileApi&methods=appendInputStream,readInputStream,download,writeBytes,close,open,appendBytes,write,read,readBytesByFileName,readBytes,deleteFile&pid=65107&server=jetty&side=provider&timeout=1024&timestamp=1483782259110, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:19,970: Reading reply sessionid:0x1593025010500e9, packet:: clientPath:null serverPath:null finished:false header:: 5,1  replyHeader:: 5,2751,-110  request:: '/dubbo,,v{s{31,s{'world,'anyone}}},0  response::  
+2017-01-07 17:44:19,972: Reading reply sessionid:0x1593025010500e9, packet:: clientPath:null serverPath:null finished:false header:: 6,1  replyHeader:: 6,2752,-110  request:: '/dubbo/fileapi.AZ_FileApi,,v{s{31,s{'world,'anyone}}},0  response::  
+2017-01-07 17:44:19,974: Reading reply sessionid:0x1593025010500e9, packet:: clientPath:null serverPath:null finished:false header:: 7,1  replyHeader:: 7,2753,-110  request:: '/dubbo/fileapi.AZ_FileApi/configurators,,v{s{31,s{'world,'anyone}}},0  response::  
+2017-01-07 17:44:19,979: Reading reply sessionid:0x1593025010500e9, packet:: clientPath:null serverPath:null finished:false header:: 8,3  replyHeader:: 8,2753,0  request:: '/dubbo/fileapi.AZ_FileApi/configurators,T  response:: s{13,13,1482571549854,1482571549854,0,0,0,0,0,0,13} 
+2017-01-07 17:44:19,983: Reading reply sessionid:0x1593025010500e9, packet:: clientPath:null serverPath:null finished:false header:: 9,8  replyHeader:: 9,2753,0  request:: '/dubbo/fileapi.AZ_FileApi/configurators,T  response:: v{} 
+2017-01-07 17:44:19,983:  [DUBBO] Notify urls for subscribe url provider://192.168.0.114:20887/file/hdfs?anyhost=true&application=hdfs-provider&category=configurators&check=false&dubbo=2.5.3&interface=fileapi.AZ_FileApi&methods=appendInputStream,readInputStream,download,writeBytes,close,open,appendBytes,write,read,readBytesByFileName,readBytes,deleteFile&pid=65107&server=jetty&side=provider&timeout=1024&timestamp=1483782259110, urls: [empty://192.168.0.114:20887/file/hdfs?anyhost=true&application=hdfs-provider&category=configurators&check=false&dubbo=2.5.3&interface=fileapi.AZ_FileApi&methods=appendInputStream,readInputStream,download,writeBytes,close,open,appendBytes,write,read,readBytesByFileName,readBytes,deleteFile&pid=65107&server=jetty&side=provider&timeout=1024&timestamp=1483782259110], dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:19,996:  [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class RouterFactory$Adpative implements com.alibaba.dubbo.rpc.cluster.RouterFactory {
+public com.alibaba.dubbo.rpc.cluster.Router getRouter(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getProtocol();
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.RouterFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.cluster.RouterFactory extension = (com.alibaba.dubbo.rpc.cluster.RouterFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.RouterFactory.class).getExtension(extName);
+return extension.getRouter(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:20,015:  [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ConfiguratorFactory$Adpative implements com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory {
+public com.alibaba.dubbo.rpc.cluster.Configurator getConfigurator(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException("url == null");
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getProtocol();
+if(extName == null) throw new IllegalStateException("Fail to get extension(com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory) name from url(" + url.toString() + ") use keys([protocol])");
+com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory extension = (com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory.class).getExtension(extName);
+return extension.getConfigurator(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:44:20,042: Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2017-01-07 17:44:20,043: Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2017-01-07 17:44:20,046: Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2017-01-07 17:44:20,047: Storing ApplicationContext in cache under key [[MergedContextConfiguration@719cec59 testClass = AZ_HDFS_FilePorviderTest, locations = '{classpath*:META-INF/spring/spring.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2017-01-07 17:44:20,048: Spring test ApplicationContext cache statistics: [ContextCache@63bbc3ee size = 1, hitCount = 0, missCount = 1, parentContextCount = 0]
+2017-01-07 17:44:20,064: Processing injected element of bean 'hdfs.AZ_HDFS_FilePorviderTest': AutowiredFieldElement for private hdfs.AZ_HDFS_FilePorvider hdfs.AZ_HDFS_FilePorviderTest.azHdfsFilePorvider
+2017-01-07 17:44:20,070: Returning cached instance of singleton bean 'AZ_HDFS_FilePorvider'
+2017-01-07 17:44:20,070: Returning cached instance of singleton bean 'azHdfsFilePorvider'
+2017-01-07 17:44:20,071: Autowiring by type from bean name 'hdfs.AZ_HDFS_FilePorviderTest' to bean named 'azHdfsFilePorvider'
+2017-01-07 17:44:29,989: Got ping response for sessionid: 0x1593025010500e9 after 2ms
+2017-01-07 17:44:39,994: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:44:49,999: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:45:00,002: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:45:10,006: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:45:20,007: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:45:30,009: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:45:40,014: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:45:50,020: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:46:00,021: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:46:10,024: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:46:20,026: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:46:30,030: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:46:40,035: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:46:50,039: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:47:00,042: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:47:10,043: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:47:20,046: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:47:30,049: Got ping response for sessionid: 0x1593025010500e9 after 1ms
+2017-01-07 17:47:40,051: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:47:50,055: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:48:00,060: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:48:10,063: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:48:20,064: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:48:30,066: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:48:40,071: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:48:50,077: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:49:00,080: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:49:10,083: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:49:20,085: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:49:30,087: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:49:40,092: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:49:50,097: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:50:00,103: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:50:10,107: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:50:20,110: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:50:30,113: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:50:40,118: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:50:50,125: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:51:00,126: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:51:10,129: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:51:20,133: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:51:30,137: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:51:40,142: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:51:50,149: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:52:00,151: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:52:10,154: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:52:20,156: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:52:30,159: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:52:40,160: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:52:50,167: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:53:00,171: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:53:10,175: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:53:20,181: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:53:30,184: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:53:40,185: Got ping response for sessionid: 0x1593025010500e9 after 1ms
+2017-01-07 17:53:50,190: Got ping response for sessionid: 0x1593025010500e9 after 1ms
+2017-01-07 17:54:00,194: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:54:10,199: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:54:20,202: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:54:30,204: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:54:40,208: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:54:50,211: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:55:00,217: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:55:10,219: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:55:20,221: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:55:30,224: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:55:40,225: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:55:50,228: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:56:00,231: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:56:10,236: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:56:20,241: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:56:30,245: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:56:40,248: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:56:50,251: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:57:00,253: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:57:10,255: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:57:20,257: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:57:30,262: Got ping response for sessionid: 0x1593025010500e9 after 1ms
+2017-01-07 17:57:40,268: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:57:50,273: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:58:00,277: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:58:10,281: Got ping response for sessionid: 0x1593025010500e9 after 1ms
+2017-01-07 17:58:20,287: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:58:30,293: Got ping response for sessionid: 0x1593025010500e9 after 3ms
+2017-01-07 17:58:40,291: Got ping response for sessionid: 0x1593025010500e9 after 0ms
+2017-01-07 17:58:46,670: After test method: context [[TestContext@3f2a4aec testClass = AZ_HDFS_FilePorviderTest, testInstance = null(hdfs.AZ_HDFS_FilePorviderTest), testMethod = testUpload@AZ_HDFS_FilePorviderTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@719cec59 testClass = AZ_HDFS_FilePorviderTest, locations = '{classpath*:META-INF/spring/spring.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]], class dirties context [false], class mode [null], method dirties context [false].
+2017-01-07 17:58:46,671: After test class: context [[TestContext@3f2a4aec testClass = AZ_HDFS_FilePorviderTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@719cec59 testClass = AZ_HDFS_FilePorviderTest, locations = '{classpath*:META-INF/spring/spring.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]], dirtiesContext [false].
+2017-01-07 17:58:46,673: Closing org.springframework.context.support.GenericApplicationContext@71f31c4e: startup date [Sat Jan 07 17:44:11 CST 2017]; root of context hierarchy
+2017-01-07 17:58:46,674:  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:58:46,675: Returning cached instance of singleton bean 'fileapi.AZ_FileApi'
+2017-01-07 17:58:46,676:  [DUBBO] Close all registries [zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=hdfs-provider&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=65107&timestamp=1483782259082], dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:58:46,676:  [DUBBO] Destroy registry:zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=hdfs-provider&dubbo=2.5.3&interface=com.alibaba.dubbo.registry.RegistryService&pid=65107&timestamp=1483782259082, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:58:46,677: Returning cached instance of singleton bean 'lifecycleProcessor'
+2017-01-07 17:58:46,677:  [DUBBO] Unregister: hessian://192.168.0.114:20887/file/hdfs?anyhost=true&application=hdfs-provider&dubbo=2.5.3&interface=fileapi.AZ_FileApi&methods=appendInputStream,readInputStream,download,writeBytes,close,open,appendBytes,write,read,readBytesByFileName,readBytes,deleteFile&pid=65107&server=jetty&side=provider&timeout=1024&timestamp=1483782259110, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:58:46,677: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5fb42753: defining beans [AZ_HDFS_FilePorvider,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,hdfs-provider,com.alibaba.dubbo.config.RegistryConfig,dubbo,hessian,fileapi.AZ_FileApi,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,azHdfsFilePorvider,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2017-01-07 17:58:46,678: Invoking destroy() on bean with name 'fileapi.AZ_FileApi'
+2017-01-07 17:58:46,679:  [DUBBO] Unregister: hessian://192.168.0.114:20887/file/hdfs?anyhost=true&application=hdfs-provider&dubbo=2.5.3&interface=fileapi.AZ_FileApi&methods=appendInputStream,readInputStream,download,writeBytes,close,open,appendBytes,write,read,readBytesByFileName,readBytes,deleteFile&pid=65107&server=jetty&side=provider&timeout=1024&timestamp=1483782259110, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:58:46,680: stopping client from cache: org.apache.hadoop.ipc.Client@7735810c
+2017-01-07 17:58:46,681: removing client from cache: org.apache.hadoop.ipc.Client@7735810c
+2017-01-07 17:58:46,681: stopping actual client because no more references remain: org.apache.hadoop.ipc.Client@7735810c
+2017-01-07 17:58:46,681: Stopping client
+2017-01-07 17:58:46,683: Reading reply sessionid:0x1593025010500e9, packet:: clientPath:null serverPath:null finished:false header:: 10,2  replyHeader:: 10,2754,0  request:: '/dubbo/fileapi.AZ_FileApi/providers/hessian%253A%252F%252F192.168.0.114%253A20887%252Ffile%252Fhdfs%253Fanyhost%253Dtrue%2526application%253Dhdfs-provider%2526dubbo%253D2.5.3%2526interface%253Dfileapi.AZ_FileApi%2526methods%253DappendInputStream%252CreadInputStream%252Cdownload%252CwriteBytes%252Cclose%252Copen%252CappendBytes%252Cwrite%252Cread%252CreadBytesByFileName%252CreadBytes%252CdeleteFile%2526pid%253D65107%2526server%253Djetty%2526side%253Dprovider%2526timeout%253D1024%2526timestamp%253D1483782259110,-1  response:: null
+2017-01-07 17:58:46,683:  [DUBBO] Destroy unregister url hessian://192.168.0.114:20887/file/hdfs?anyhost=true&application=hdfs-provider&dubbo=2.5.3&interface=fileapi.AZ_FileApi&methods=appendInputStream,readInputStream,download,writeBytes,close,open,appendBytes,write,read,readBytesByFileName,readBytes,deleteFile&pid=65107&server=jetty&side=provider&timeout=1024&timestamp=1483782259110, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:58:46,684:  [DUBBO] Unsubscribe: provider://192.168.0.114:20887/file/hdfs?anyhost=true&application=hdfs-provider&category=configurators&check=false&dubbo=2.5.3&interface=fileapi.AZ_FileApi&methods=appendInputStream,readInputStream,download,writeBytes,close,open,appendBytes,write,read,readBytesByFileName,readBytes,deleteFile&pid=65107&server=jetty&side=provider&timeout=1024&timestamp=1483782259110, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:58:46,684: Reading reply sessionid:0x1593025010500e9, packet:: clientPath:null serverPath:null finished:false header:: 11,2  replyHeader:: 11,2755,-101  request:: '/dubbo/fileapi.AZ_FileApi/providers/hessian%253A%252F%252F192.168.0.114%253A20887%252Ffile%252Fhdfs%253Fanyhost%253Dtrue%2526application%253Dhdfs-provider%2526dubbo%253D2.5.3%2526interface%253Dfileapi.AZ_FileApi%2526methods%253DappendInputStream%252CreadInputStream%252Cdownload%252CwriteBytes%252Cclose%252Copen%252CappendBytes%252Cwrite%252Cread%252CreadBytesByFileName%252CreadBytes%252CdeleteFile%2526pid%253D65107%2526server%253Djetty%2526side%253Dprovider%2526timeout%253D1024%2526timestamp%253D1483782259110,-1  response:: null
+2017-01-07 17:58:46,684:  [DUBBO] Destroy unsubscribe url provider://192.168.0.114:20887/file/hdfs?anyhost=true&application=hdfs-provider&category=configurators&check=false&dubbo=2.5.3&interface=fileapi.AZ_FileApi&methods=appendInputStream,readInputStream,download,writeBytes,close,open,appendBytes,write,read,readBytesByFileName,readBytes,deleteFile&pid=65107&server=jetty&side=provider&timeout=1024&timestamp=1483782259110, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:58:46,685:  [DUBBO] Unsubscribe: provider://192.168.0.114:20887/file/hdfs?anyhost=true&application=hdfs-provider&category=configurators&check=false&dubbo=2.5.3&interface=fileapi.AZ_FileApi&methods=appendInputStream,readInputStream,download,writeBytes,close,open,appendBytes,write,read,readBytesByFileName,readBytes,deleteFile&pid=65107&server=jetty&side=provider&timeout=1024&timestamp=1483782259110, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:58:46,686: Closing ZkClient...
+2017-01-07 17:58:46,686: Terminate ZkClient event thread.
+2017-01-07 17:58:46,687: Retrieved dependent beans for bean 'azHdfsFilePorvider': [hdfs.AZ_HDFS_FilePorviderTest]
+2017-01-07 17:58:46,687: Closing ZooKeeper connected to 127.0.0.1:2181
+2017-01-07 17:58:46,687: Closing session: 0x1593025010500e9
+2017-01-07 17:58:46,688: Closing client for session: 0x1593025010500e9
+2017-01-07 17:58:46,689: Reading reply sessionid:0x1593025010500e9, packet:: clientPath:null serverPath:null finished:false header:: 12,-11  replyHeader:: 12,2756,0  request:: null response:: null
+2017-01-07 17:58:46,689: Disconnecting client for session: 0x1593025010500e9
+2017-01-07 17:58:46,690: An exception was thrown while closing send thread for session 0x1593025010500e9 : Unable to read additional data from server sessionid 0x1593025010500e9, likely server has closed socket
+2017-01-07 17:58:46,690: EventThread shut down
+2017-01-07 17:58:46,690: Session: 0x1593025010500e9 closed
+2017-01-07 17:58:46,690: Closing ZkClient...done
+2017-01-07 17:58:46,691:  [DUBBO] Close hessian server hessian://192.168.0.114:20887/file/hdfs?anyhost=true&application=hdfs-provider&dubbo=2.5.3&interface=fileapi.AZ_FileApi&methods=appendInputStream,readInputStream,download,writeBytes,close,open,appendBytes,write,read,readBytesByFileName,readBytes,deleteFile&pid=65107&server=jetty&side=provider&timeout=1024&timestamp=1483782259110, dubbo version: 2.5.3, current host: 127.0.0.1
+2017-01-07 17:58:46,691: Stopped SelectChannelConnector@0.0.0.0:20887
+2017-01-07 17:58:46,692: stopped org.mortbay.jetty.nio.SelectChannelConnector$1@55b0bd3d
+2017-01-07 17:58:46,693: stopped SelectChannelConnector@0.0.0.0:20887
+2017-01-07 17:58:46,693: stopping Server@51694079
+2017-01-07 17:58:46,693: stopping ServletHandler@1b1eaf88
+2017-01-07 17:58:46,693: stopped com.alibaba.dubbo.remoting.http.servlet.DispatcherServlet-536871670
+2017-01-07 17:58:46,693: stopped ServletHandler@1b1eaf88
+2017-01-07 17:58:46,813: stopped org.mortbay.thread.QueuedThreadPool@3605534e
+2017-01-07 17:58:46,813: stopped Server@51694079
