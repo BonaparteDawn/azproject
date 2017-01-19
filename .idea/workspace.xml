@@ -3,24 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f9531341-aefe-4ee1-8d3a-4dbaf6c904d0" name="Default" comment="解决mybatis-generator重新生成mapper的xml文件的时候追加的问题(需要执行DeletePlugin插件)">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common-util/src/main/java/common/framework/util/ObjectUtils.java" afterPath="$PROJECT_DIR$/common-util/src/main/java/common/framework/util/ObjectUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member-dao/src/main/java/mapper/MemberMapper.java" afterPath="$PROJECT_DIR$/member-dao/src/main/java/mapper/MemberMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member-dao/src/main/java/mapper/RoleMapper.java" afterPath="$PROJECT_DIR$/member-dao/src/main/java/mapper/RoleMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member-dao/src/main/resources/mapper/MemberMapper.xml" afterPath="$PROJECT_DIR$/member-dao/src/main/resources/mapper/MemberMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member-dao/src/main/resources/mapper/RoleMapper.xml" afterPath="$PROJECT_DIR$/member-dao/src/main/resources/mapper/RoleMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member-domain/src/main/java/entity/MemberExample.java" afterPath="$PROJECT_DIR$/member-domain/src/main/java/entity/MemberExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/member-domain/src/main/java/entity/RoleExample.java" afterPath="$PROJECT_DIR$/member-domain/src/main/java/entity/RoleExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mybatis-generator/mybatis-generator.iml" afterPath="$PROJECT_DIR$/mybatis-generator/mybatis-generator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mybatis-generator/pom.xml" afterPath="$PROJECT_DIR$/mybatis-generator/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig-dao/src/main/java/mapper/FileMapper.java" afterPath="$PROJECT_DIR$/sysconfig-dao/src/main/java/mapper/FileMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig-dao/src/main/java/mapper/LogMapper.java" afterPath="$PROJECT_DIR$/sysconfig-dao/src/main/java/mapper/LogMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig-dao/src/main/java/mapper/MenuMapper.java" afterPath="$PROJECT_DIR$/sysconfig-dao/src/main/java/mapper/MenuMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig-dao/src/main/resources/mapper/FileMapper.xml" afterPath="$PROJECT_DIR$/sysconfig-dao/src/main/resources/mapper/FileMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig-dao/src/main/resources/mapper/LogMapper.xml" afterPath="$PROJECT_DIR$/sysconfig-dao/src/main/resources/mapper/LogMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig-dao/src/main/resources/mapper/MenuMapper.xml" afterPath="$PROJECT_DIR$/sysconfig-dao/src/main/resources/mapper/MenuMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig-domain/src/main/java/entity/FileExample.java" afterPath="$PROJECT_DIR$/sysconfig-domain/src/main/java/entity/FileExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig-domain/src/main/java/entity/LogExample.java" afterPath="$PROJECT_DIR$/sysconfig-domain/src/main/java/entity/LogExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sysconfig-domain/src/main/java/entity/MenuExample.java" afterPath="$PROJECT_DIR$/sysconfig-domain/src/main/java/entity/MenuExample.java" />
     </list>
     <ignored path="azparent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,13 +80,12 @@
       <file leaf-file-name="DeletePlugin.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mybatis-generator/src/main/java/mybatis/generator/DeletePlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+            <state relative-caret-position="255">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
-                <element signature="e#1256#1257#0" expanded="true" />
-                <element signature="e#1338#1339#0" expanded="true" />
-                <element signature="e#1647#1655#0" expanded="true" />
-                <element signature="e#3147#3156#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1646#1654#0" expanded="true" />
+                <element signature="e#3146#3155#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -341,6 +322,74 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="azparent" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="azparent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis-generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="azparent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis-generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="azparent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis-generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="azparent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mybatis-generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1419,7 +1468,21 @@
       <option name="project" value="LOCAL" />
       <updated>1484839366041</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="补充了随机数产生器&#10;">
+      <created>1484839437132</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1484839437132</updated>
+    </task>
+    <task id="LOCAL-00007" summary="解决mybatis-generator重新生成mapper的xml文件的时候追加的问题(需要执行DeletePlugin插件)">
+      <created>1484839610416</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1484839610417</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1455,7 +1518,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="562792000" />
+    <option name="totallyTimeSpent" value="562986000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1567,12 +1630,12 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="新添加菜单操作" />
     <MESSAGE value="删除了多余的文件" />
     <MESSAGE value="1" />
     <MESSAGE value="补充了随机数产生器的功能" />
     <MESSAGE value="补充了随机数产生器" />
+    <MESSAGE value="补充了随机数产生器&#10;" />
     <MESSAGE value="解决mybatis-generator重新生成mapper的xml文件的时候追加的问题(需要执行DeletePlugin插件)" />
     <option name="LAST_COMMIT_MESSAGE" value="解决mybatis-generator重新生成mapper的xml文件的时候追加的问题(需要执行DeletePlugin插件)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1988,13 +2051,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mybatis-generator/src/main/java/mybatis/generator/DeletePlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        <state relative-caret-position="255">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="e#1256#1257#0" expanded="true" />
-            <element signature="e#1338#1339#0" expanded="true" />
-            <element signature="e#1647#1655#0" expanded="true" />
-            <element signature="e#3147#3156#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1646#1654#0" expanded="true" />
+            <element signature="e#3146#3155#0" expanded="true" />
           </folding>
         </state>
       </provider>
