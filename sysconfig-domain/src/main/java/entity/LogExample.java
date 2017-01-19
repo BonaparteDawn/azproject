@@ -22,7 +22,7 @@ public class LogExample {
 
     /**
      *
-     * @mbg.generated 2016-12-23
+     * @mbg.generated 2017-01-19
      */
     public LogExample() {
         oredCriteria = new ArrayList<Criteria>();
@@ -30,7 +30,7 @@ public class LogExample {
 
     /**
      *
-     * @mbg.generated 2016-12-23
+     * @mbg.generated 2017-01-19
      */
     public void setOrderByClause(String orderByClause) {
         this.orderByClause = orderByClause;
@@ -38,7 +38,7 @@ public class LogExample {
 
     /**
      *
-     * @mbg.generated 2016-12-23
+     * @mbg.generated 2017-01-19
      */
     public String getOrderByClause() {
         return orderByClause;
@@ -46,7 +46,7 @@ public class LogExample {
 
     /**
      *
-     * @mbg.generated 2016-12-23
+     * @mbg.generated 2017-01-19
      */
     public void setDistinct(boolean distinct) {
         this.distinct = distinct;
@@ -54,7 +54,7 @@ public class LogExample {
 
     /**
      *
-     * @mbg.generated 2016-12-23
+     * @mbg.generated 2017-01-19
      */
     public boolean isDistinct() {
         return distinct;
@@ -62,7 +62,7 @@ public class LogExample {
 
     /**
      *
-     * @mbg.generated 2016-12-23
+     * @mbg.generated 2017-01-19
      */
     public List<Criteria> getOredCriteria() {
         return oredCriteria;
@@ -70,7 +70,7 @@ public class LogExample {
 
     /**
      *
-     * @mbg.generated 2016-12-23
+     * @mbg.generated 2017-01-19
      */
     public void or(Criteria criteria) {
         oredCriteria.add(criteria);
@@ -78,7 +78,7 @@ public class LogExample {
 
     /**
      *
-     * @mbg.generated 2016-12-23
+     * @mbg.generated 2017-01-19
      */
     public Criteria or() {
         Criteria criteria = createCriteriaInternal();
@@ -88,7 +88,7 @@ public class LogExample {
 
     /**
      *
-     * @mbg.generated 2016-12-23
+     * @mbg.generated 2017-01-19
      */
     public Criteria createCriteria() {
         Criteria criteria = createCriteriaInternal();
@@ -100,7 +100,7 @@ public class LogExample {
 
     /**
      *
-     * @mbg.generated 2016-12-23
+     * @mbg.generated 2017-01-19
      */
     protected Criteria createCriteriaInternal() {
         Criteria criteria = new Criteria();
@@ -109,7 +109,7 @@ public class LogExample {
 
     /**
      *
-     * @mbg.generated 2016-12-23
+     * @mbg.generated 2017-01-19
      */
     public void clear() {
         oredCriteria.clear();
@@ -118,7 +118,7 @@ public class LogExample {
     }
 
     /**
-     * log 2016-12-23
+     * log 2017-01-19
      */
     protected abstract static class GeneratedCriteria {
         protected List<Criterion> criteria;
@@ -843,7 +843,7 @@ public class LogExample {
     }
 
     /**
-     * log 2016-12-23
+     * log 2017-01-19
      */
     public static class Criterion {
         private String condition;

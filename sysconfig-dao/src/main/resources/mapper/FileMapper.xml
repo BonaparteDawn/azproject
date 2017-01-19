@@ -270,4 +270,542 @@
       remark = #{remark,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <resultMap id="BaseResultMap" type="entity.File">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="fileOriginalName" jdbcType="VARCHAR" property="fileOriginalName" />
+    <result column="fileType" jdbcType="VARCHAR" property="fileType" />
+    <result column="filePath" jdbcType="VARCHAR" property="filePath" />
+    <result column="businessID" jdbcType="VARCHAR" property="businessID" />
+    <result column="businessType" jdbcType="SMALLINT" property="businessType" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, name, fileOriginalName, fileType, filePath, businessID, businessType, time, remark
+  </sql>
+  <select id="selectByExample" parameterType="entity.FileExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from file
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from file
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from file
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="entity.FileExample">
+    delete from file
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="entity.File">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into file (name, fileOriginalName, fileType, 
+      filePath, businessID, businessType, 
+      time, remark)
+    values (#{name,jdbcType=VARCHAR}, #{fileOriginalName,jdbcType=VARCHAR}, #{fileType,jdbcType=VARCHAR}, 
+      #{filePath,jdbcType=VARCHAR}, #{businessID,jdbcType=VARCHAR}, #{businessType,jdbcType=SMALLINT}, 
+      #{time,jdbcType=TIMESTAMP}, #{remark,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="entity.File">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into file
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        name,
+      </if>
+      <if test="fileOriginalName != null">
+        fileOriginalName,
+      </if>
+      <if test="fileType != null">
+        fileType,
+      </if>
+      <if test="filePath != null">
+        filePath,
+      </if>
+      <if test="businessID != null">
+        businessID,
+      </if>
+      <if test="businessType != null">
+        businessType,
+      </if>
+      <if test="time != null">
+        time,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="fileOriginalName != null">
+        #{fileOriginalName,jdbcType=VARCHAR},
+      </if>
+      <if test="fileType != null">
+        #{fileType,jdbcType=VARCHAR},
+      </if>
+      <if test="filePath != null">
+        #{filePath,jdbcType=VARCHAR},
+      </if>
+      <if test="businessID != null">
+        #{businessID,jdbcType=VARCHAR},
+      </if>
+      <if test="businessType != null">
+        #{businessType,jdbcType=SMALLINT},
+      </if>
+      <if test="time != null">
+        #{time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="entity.FileExample" resultType="java.lang.Long">
+    select count(*) from file
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update file
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.name != null">
+        name = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.fileOriginalName != null">
+        fileOriginalName = #{record.fileOriginalName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.fileType != null">
+        fileType = #{record.fileType,jdbcType=VARCHAR},
+      </if>
+      <if test="record.filePath != null">
+        filePath = #{record.filePath,jdbcType=VARCHAR},
+      </if>
+      <if test="record.businessID != null">
+        businessID = #{record.businessID,jdbcType=VARCHAR},
+      </if>
+      <if test="record.businessType != null">
+        businessType = #{record.businessType,jdbcType=SMALLINT},
+      </if>
+      <if test="record.time != null">
+        time = #{record.time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.remark != null">
+        remark = #{record.remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update file
+    set id = #{record.id,jdbcType=INTEGER},
+      name = #{record.name,jdbcType=VARCHAR},
+      fileOriginalName = #{record.fileOriginalName,jdbcType=VARCHAR},
+      fileType = #{record.fileType,jdbcType=VARCHAR},
+      filePath = #{record.filePath,jdbcType=VARCHAR},
+      businessID = #{record.businessID,jdbcType=VARCHAR},
+      businessType = #{record.businessType,jdbcType=SMALLINT},
+      time = #{record.time,jdbcType=TIMESTAMP},
+      remark = #{record.remark,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="entity.File">
+    update file
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="fileOriginalName != null">
+        fileOriginalName = #{fileOriginalName,jdbcType=VARCHAR},
+      </if>
+      <if test="fileType != null">
+        fileType = #{fileType,jdbcType=VARCHAR},
+      </if>
+      <if test="filePath != null">
+        filePath = #{filePath,jdbcType=VARCHAR},
+      </if>
+      <if test="businessID != null">
+        businessID = #{businessID,jdbcType=VARCHAR},
+      </if>
+      <if test="businessType != null">
+        businessType = #{businessType,jdbcType=SMALLINT},
+      </if>
+      <if test="time != null">
+        time = #{time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="entity.File">
+    update file
+    set name = #{name,jdbcType=VARCHAR},
+      fileOriginalName = #{fileOriginalName,jdbcType=VARCHAR},
+      fileType = #{fileType,jdbcType=VARCHAR},
+      filePath = #{filePath,jdbcType=VARCHAR},
+      businessID = #{businessID,jdbcType=VARCHAR},
+      businessType = #{businessType,jdbcType=SMALLINT},
+      time = #{time,jdbcType=TIMESTAMP},
+      remark = #{remark,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <resultMap id="BaseResultMap" type="entity.File">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="fileOriginalName" jdbcType="VARCHAR" property="fileOriginalName" />
+    <result column="fileType" jdbcType="VARCHAR" property="fileType" />
+    <result column="filePath" jdbcType="VARCHAR" property="filePath" />
+    <result column="businessID" jdbcType="VARCHAR" property="businessID" />
+    <result column="businessType" jdbcType="SMALLINT" property="businessType" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, name, fileOriginalName, fileType, filePath, businessID, businessType, time, remark
+  </sql>
+  <select id="selectByExample" parameterType="entity.FileExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from file
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from file
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from file
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="entity.FileExample">
+    delete from file
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="entity.File">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into file (name, fileOriginalName, fileType, 
+      filePath, businessID, businessType, 
+      time, remark)
+    values (#{name,jdbcType=VARCHAR}, #{fileOriginalName,jdbcType=VARCHAR}, #{fileType,jdbcType=VARCHAR}, 
+      #{filePath,jdbcType=VARCHAR}, #{businessID,jdbcType=VARCHAR}, #{businessType,jdbcType=SMALLINT}, 
+      #{time,jdbcType=TIMESTAMP}, #{remark,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="entity.File">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into file
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        name,
+      </if>
+      <if test="fileOriginalName != null">
+        fileOriginalName,
+      </if>
+      <if test="fileType != null">
+        fileType,
+      </if>
+      <if test="filePath != null">
+        filePath,
+      </if>
+      <if test="businessID != null">
+        businessID,
+      </if>
+      <if test="businessType != null">
+        businessType,
+      </if>
+      <if test="time != null">
+        time,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="fileOriginalName != null">
+        #{fileOriginalName,jdbcType=VARCHAR},
+      </if>
+      <if test="fileType != null">
+        #{fileType,jdbcType=VARCHAR},
+      </if>
+      <if test="filePath != null">
+        #{filePath,jdbcType=VARCHAR},
+      </if>
+      <if test="businessID != null">
+        #{businessID,jdbcType=VARCHAR},
+      </if>
+      <if test="businessType != null">
+        #{businessType,jdbcType=SMALLINT},
+      </if>
+      <if test="time != null">
+        #{time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="entity.FileExample" resultType="java.lang.Long">
+    select count(*) from file
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update file
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.name != null">
+        name = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.fileOriginalName != null">
+        fileOriginalName = #{record.fileOriginalName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.fileType != null">
+        fileType = #{record.fileType,jdbcType=VARCHAR},
+      </if>
+      <if test="record.filePath != null">
+        filePath = #{record.filePath,jdbcType=VARCHAR},
+      </if>
+      <if test="record.businessID != null">
+        businessID = #{record.businessID,jdbcType=VARCHAR},
+      </if>
+      <if test="record.businessType != null">
+        businessType = #{record.businessType,jdbcType=SMALLINT},
+      </if>
+      <if test="record.time != null">
+        time = #{record.time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.remark != null">
+        remark = #{record.remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update file
+    set id = #{record.id,jdbcType=INTEGER},
+      name = #{record.name,jdbcType=VARCHAR},
+      fileOriginalName = #{record.fileOriginalName,jdbcType=VARCHAR},
+      fileType = #{record.fileType,jdbcType=VARCHAR},
+      filePath = #{record.filePath,jdbcType=VARCHAR},
+      businessID = #{record.businessID,jdbcType=VARCHAR},
+      businessType = #{record.businessType,jdbcType=SMALLINT},
+      time = #{record.time,jdbcType=TIMESTAMP},
+      remark = #{record.remark,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="entity.File">
+    update file
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="fileOriginalName != null">
+        fileOriginalName = #{fileOriginalName,jdbcType=VARCHAR},
+      </if>
+      <if test="fileType != null">
+        fileType = #{fileType,jdbcType=VARCHAR},
+      </if>
+      <if test="filePath != null">
+        filePath = #{filePath,jdbcType=VARCHAR},
+      </if>
+      <if test="businessID != null">
+        businessID = #{businessID,jdbcType=VARCHAR},
+      </if>
+      <if test="businessType != null">
+        businessType = #{businessType,jdbcType=SMALLINT},
+      </if>
+      <if test="time != null">
+        time = #{time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="entity.File">
+    update file
+    set name = #{name,jdbcType=VARCHAR},
+      fileOriginalName = #{fileOriginalName,jdbcType=VARCHAR},
+      fileType = #{fileType,jdbcType=VARCHAR},
+      filePath = #{filePath,jdbcType=VARCHAR},
+      businessID = #{businessID,jdbcType=VARCHAR},
+      businessType = #{businessType,jdbcType=SMALLINT},
+      time = #{time,jdbcType=TIMESTAMP},
+      remark = #{remark,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
 </mapper>

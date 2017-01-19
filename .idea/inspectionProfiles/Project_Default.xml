@@ -14,6 +14,7 @@
       <option name="loggerFactoryMethodName" value="getLogger,getLogger,getLog,getLogger" />
     </inspection_tool>
     <inspection_tool class="RequiredBeanTypeInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="Since15" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
     <inspection_tool class="SpringAopErrorsInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="SpringBatchModel" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="SpringBeanAutowiringInspection" enabled="true" level="WARNING" enabled_by_default="true" />

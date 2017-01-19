@@ -1,28 +1,18 @@
 package common.framework.annotation;
 
-import common.framework.bean.AZ_EmailBox;
-import common.framework.runnable.AZ_MimeMessageConsumerRunnable;
-import common.framework.runnable.AZ_SimpleEmailConsumerRunnable;
-import common.framework.security.Base64Util;
 import common.framework.security.MD5Util;
 import common.framework.service.AZ_EmailHelper;
-import common.framework.service.AZ_ThreadPoolService;
 import common.framework.util.EmailUtil;
-import common.framework.util.EnvironmentUtil;
 import common.framework.util.InternetUtil;
 import common.framework.util.RandomUtil;
 import org.junit.Before;
 import org.junit.Test;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.MimeMailMessage;
 import org.springframework.mail.javamail.MimeMessageHelper;
 
-import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -41,10 +31,15 @@ public class MemberService_Test {
         System.out.println(new MD5Util().productSummary(inputStream));
     }
     @Test
-    public void rand(){
+    public void rand() throws Exception {
         for (int i = 0 ; i < 10 ; i++){
             System.out.println(RandomUtil.generate32UUID());
         }
+        System.out.println(RandomUtil.randChinese(12).length());
+        System.out.println(RandomUtil.randUpperCaseEnglish(1200).length());
+        System.out.println(RandomUtil.randLowerCaseEnglish(1200).length());
+        System.out.println(RandomUtil.randEnglish(1200).length());
+        System.out.println(RandomUtil.rangNumber(1000).length());
     }
     @Test
     public void internet(){
@@ -54,7 +49,6 @@ public class MemberService_Test {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        EnvironmentUtil.printAllEnvirontmentInfo();
     }
     @Test
     public void testSendEmail() throws Exception {

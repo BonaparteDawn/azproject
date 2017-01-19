@@ -45,6 +45,26 @@ public class ObjectUtils {
         return !isEmpty(temp);
     }
 
+
+    /**
+     * 判断对象均不为空
+     * @param temp
+     * @return
+     */
+    public static boolean isNotEmpty(Object ...temp){
+        if (temp == null){
+            return false;
+        }
+        boolean res = false;
+        for (Object o : temp){
+            if (isEmpty(o)){
+                res = false;
+                break;
+            }
+        }
+        return res;
+    }
+
     /**
      * 序列化对象到文件
      * @param object
