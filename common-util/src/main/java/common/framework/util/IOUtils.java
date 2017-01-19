@@ -196,4 +196,22 @@ public class IOUtils {
         outputStream.flush();
         return true;
     }
+
+    /**
+     * 将数据流里面的数据读取出来,保存成字符串
+     * @param inputStream
+     * @return
+     */
+    public static String read(InputStream inputStream) throws IOException {
+        if (inputStream == null){
+            return null;
+        }
+        String res = null;
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        if (write2outputStream(inputStream, outputStream)){
+            res = outputStream.toString();
+        }
+        outputStream.close();
+        return res;
+    }
 }

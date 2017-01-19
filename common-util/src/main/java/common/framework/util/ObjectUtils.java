@@ -83,4 +83,11 @@ public class ObjectUtils {
         fileInputStream.close();
         return res;
     }
+    public static <T> T setValue(T value,T defaultValue){
+        T t = value;
+        if (ObjectUtils.isEmpty(value)){
+            t = defaultValue;
+        }
+        return t;
+    }
 }
