@@ -1,7 +1,0 @@
-2017-01-18 21:58:32,335: method:common.framework.runnable.AZ_SimpleEmailConsumerRunnable.run(line:20)-----取得邮件准备投入线程池
-2017-01-18 21:58:32,340: method:common.framework.runnable.AZ_SimpleEmailConsumerRunnable.run(line:20)-----已经投入邮件线程池
-2017-01-18 21:58:32,538: method:common.framework.runnable.AZ_MimeMessageConsumerRunnable.run(line:20)-----取得邮件准备投入线程池
-2017-01-18 21:58:32,539: method:common.framework.runnable.AZ_MimeMessageConsumerRunnable.run(line:20)-----已经投入邮件线程池
-2017-01-18 21:58:33,207: method:common.framework.runnable.AZ_SimpleEmailConsumerRunnable$EmailService.run(line:20)-----发送成功
-2017-01-18 21:58:33,254: method:common.framework.runnable.AZ_MimeMessageConsumerRunnable$EmailService.run(line:20)-----发送成功
-2017-01-18 21:58:39,077: method:common.framework.service.AZ_ThreadPoolService$ThreadShutdownHook.run(line:20)-----线程池关闭
