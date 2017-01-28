@@ -1,6 +1,8 @@
 package common.framework.util;
 
+import common.framework.security.MD5Util;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.util.Assert;
 
 import java.io.File;
 import java.io.IOException;
@@ -42,5 +44,25 @@ public class FileUtil {
                 files[i].delete();
             }
         }
+    }
+
+    /**
+     * 获得文件的MD5值
+     * @param inputStream
+     * @return
+     * @throws IOException
+     */
+    public static String md5(InputStream inputStream) throws IOException {
+        Assert.notNull(inputStream,"fileUtil_inputStream_null");
+        MD5Util md5Util = new MD5Util();
+        return md5Util.productSummary(inputStream);
+    }
+    public static boolean delete(String filePath){
+        boolean res = false;
+        File file = new File(filePath);
+        if (file.exists()){
+            res = file.delete();
+        }
+        return res;
     }
 }
