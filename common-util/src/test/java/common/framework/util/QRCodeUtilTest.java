@@ -1,5 +1,7 @@
 package common.framework.util;
 
+import common.framework.service.AZ_Performance;
+import constant.AZ_Constant;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,9 +15,16 @@ public class QRCodeUtilTest {
     }
     @Test
     public void create() throws Exception {
-        String path = "/Users/Fuzhong.Yan/Desktop/1.png";
-        QRCodeUtil.encode("nihao",path);
-        System.out.println(QRCodeUtil.decode(path));
-        FileUtil.delete(path);
+        AZ_Performance.test("生成二维码", 100, new Runnable() {
+            public void run() {
+                try {
+                    String path = AZ_Constant.TEST_BASE_PATH_OUT+"/qr.png";
+                    QRCodeUtil.encode("nihao",path);
+                    System.out.println(QRCodeUtil.decode(path));
+                }catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 }

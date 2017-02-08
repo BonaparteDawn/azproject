@@ -1,6 +1,7 @@
 package common.framework.security;
 
 import common.framework.util.ByteUtils;
+
 import javax.crypto.Cipher;
 import java.io.Serializable;
 import java.security.*;
@@ -23,7 +24,7 @@ public class RSAUtil extends  SecurityCoder implements Serializable{
     /**
      * 密钥长度
      */
-    private int keySize  = 512;
+    private int keySize  = MIN_KEY_SIZE;
     /**
      * 密钥对
      */
@@ -95,7 +96,7 @@ public class RSAUtil extends  SecurityCoder implements Serializable{
 
 
 
-    private void productKeyPair() throws Exception{
+    public void productKeyPair() throws Exception{
         if (keyPair == null && privateEncodeKey == null && publicEncodeKey == null){
             keyPair = generateKeyPair(getSeed().getBytes());
             if (keyPair != null){
@@ -109,7 +110,7 @@ public class RSAUtil extends  SecurityCoder implements Serializable{
         }
     }
 
-    public KeyPair generateKeyPair(byte[] seed) throws  Exception{
+    private KeyPair generateKeyPair(byte[] seed) throws  Exception{
         if (seed == null){
             return null;
         }

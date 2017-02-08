@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * 对象工具类
  * Created by Fuzhong.Yan on 16/11/9.
  */
 public class ObjectUtils {
@@ -109,5 +110,17 @@ public class ObjectUtils {
             t = defaultValue;
         }
         return t;
+    }
+    public static  Object[] append(Object temp,Object[] temp1){
+        if (temp == null){
+            return temp1;
+        }
+        if (temp1 == null){
+            return new Object[]{temp};
+        }
+        Object[] res = new Object[temp1.length+1];
+        res[0] = temp;
+        System.arraycopy(temp1,0,res,1,temp1.length);
+        return temp1;
     }
 }

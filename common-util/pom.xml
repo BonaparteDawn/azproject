@@ -60,11 +60,48 @@
             <artifactId>core</artifactId>
             <version>3.3.0</version>
         </dependency>
-
         <dependency>
             <groupId>com.google.zxing</groupId>
             <artifactId>javase</artifactId>
             <version>3.3.0</version>
         </dependency>
+        <!--pdf生成框架-->
+        <dependency>
+            <groupId>org.xhtmlrenderer</groupId>
+            <artifactId>flying-saucer-pdf-itext5</artifactId>
+            <version>9.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>rt</groupId>
+            <artifactId>rt</artifactId>
+            <version>1.7</version>
+            <scope>system</scope>
+            <systemPath>${java.home}/lib/rt.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>jce</groupId>
+            <artifactId>jce</artifactId>
+            <version>1.7</version>
+            <scope>system</scope>
+            <systemPath>${java.home}/lib/jce.jar</systemPath>
+        </dependency>
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <encoding>UTF-8</encoding>
+                    <compilerArguments>
+                        <verbose />
+                        <bootclasspath>${java.home}\jre\lib\rt.jar;${java.home}\jre\lib\jce.jar</bootclasspath>
+                    </compilerArguments>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

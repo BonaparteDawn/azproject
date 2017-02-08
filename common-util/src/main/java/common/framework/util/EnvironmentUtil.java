@@ -1,28 +1,12 @@
 package common.framework.util;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-import java.lang.management.ClassLoadingMXBean;
-import java.lang.management.CompilationMXBean;
-import java.lang.management.GarbageCollectorMXBean;
-import java.lang.management.ManagementFactory;
-import java.lang.management.MemoryMXBean;
-import java.lang.management.MemoryManagerMXBean;
-import java.lang.management.MemoryPoolMXBean;
-import java.lang.management.MemoryUsage;
-import java.lang.management.OperatingSystemMXBean;
-import java.lang.management.RuntimeMXBean;
-import java.lang.management.ThreadInfo;
-import java.lang.management.ThreadMXBean;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
+import org.springframework.util.Assert;
 
 import javax.management.MBeanServer;
-
-import org.springframework.util.Assert;
+import java.lang.management.*;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.*;
 
 /**
  * 系统环境
@@ -756,6 +740,14 @@ public class EnvironmentUtil {
      */
     public static  List<GarbageCollectorMXBean> getGarbageCollectorMXBeans() {
         return ManagementFactory.getGarbageCollectorMXBeans();
+    }
+
+    /**
+     * 得到当前线程的类加载器
+     * @return
+     */
+    public static ClassLoader getClassLoader(){
+        return Thread.currentThread().getContextClassLoader();
     }
     /**
      * 打印环境所有信息

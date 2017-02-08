@@ -1,11 +1,9 @@
 package common.framework.util;
 
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.Resource;
-import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.util.Assert;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 /**
@@ -20,8 +18,13 @@ public class PropertiesUtil {
      */
     public static Properties getProperties(String classPath) throws IOException {
         Assert.hasLength(classPath,"CLASS_PATH_LEN0");
-        Properties properties = new Properties();
-        properties.load(new ClassPathResource(classPath).getInputStream());
+        Properties properties = null;
+        InputStream inputStream = FileUtil.readClasspath(classPath);
+        if (inputStream != null){
+            properties = new Properties();
+            properties.load(inputStream);
+            inputStream.close();
+        }
         return properties;
     }
 
@@ -33,11 +36,13 @@ public class PropertiesUtil {
      */
     public static Properties getPropertiesByPathMatching(String classPath) throws IOException {
         Assert.hasLength(classPath,"CLASS_PATH_LEN0");
-        Properties properties = new Properties();
-        PathMatchingResourcePatternResolver resourcePatternResolver = new PathMatchingResourcePatternResolver();
-        Resource p = resourcePatternResolver.getResource(classPath);
-        Assert.notNull(p,"CLASS_PATH_RESOURCE_NULL");
-        properties.load(p.getInputStream());
+        Properties properties = null;
+        InputStream inputStream = FileUtil.readClasspathWithClasspathPre(classPath);
+        if (inputStream != null){
+            properties = new Properties();
+            properties.load(inputStream);
+            inputStream.close();
+        }
         return properties;
     }
 }

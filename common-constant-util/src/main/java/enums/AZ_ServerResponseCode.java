@@ -8,7 +8,7 @@ public enum AZ_ServerResponseCode {
     /**服务器打开*/
     OPEN,
     /**服务器关闭*/
-    COLOSE,
+    CLOSE,
     /**成功*/
     SUCCESS,
     /**失败*/

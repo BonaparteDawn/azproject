@@ -9,14 +9,14 @@ public class ThreadUtil {
     /**
      * 线程池
      */
-    private static AZ_ThreadPoolService THREADPOOLSERVICE = null;
+    private static AZ_ThreadPoolService THREAD_POOL_SERVICE = null;
 
     /**
      * 线程池里面的处理线程数量
      */
     private static int DEFAULTTHREADNUMBER = 3;
     static {
-        THREADPOOLSERVICE = new AZ_ThreadPoolService(DEFAULTTHREADNUMBER);
+        THREAD_POOL_SERVICE = new AZ_ThreadPoolService(DEFAULTTHREADNUMBER);
     }
 
     /**
@@ -36,7 +36,7 @@ public class ThreadUtil {
      * @return
      */
     public static AZ_ThreadPoolService getThreadPool(){
-        return THREADPOOLSERVICE;
+        return THREAD_POOL_SERVICE;
     }
 
     /**

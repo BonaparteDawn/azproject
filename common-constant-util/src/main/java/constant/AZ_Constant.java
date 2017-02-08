@@ -48,14 +48,20 @@ public class AZ_Constant {
     public final static String FILE_PATH_PREFIX="http://localhost:8080/";
     /**生成文件路径基*/
     public final static int FILE_PATH_RADIX_BASE=16;
-    /**数据流块大小*/
+    /**文件数据流块大小*/
     public final static int FILE_BLOCK_SIZE = 1;
-    /**数据流块单位B*/
+    /**文件数据流块单位B*/
     public final static int FILE_BLOCK_UNIT_BYTE = 1;
-    /**数据流块单位KB*/
+    /**文件数据流块单位KB*/
     public final static int FILE_BLOCK_UNIT_KB = 1024*FILE_BLOCK_UNIT_BYTE;
-    /**数据流块单位M*/
+    /**文件数据流块单位M*/
     public final static int FILE_BLOCK_UNIT_M = 1024*FILE_BLOCK_UNIT_KB;
-    /**数据流块单位G*/
+    /**文件数据流块单位G*/
     public final static int FILE_BLOCK_UNIT_G = 1024*FILE_BLOCK_UNIT_M;
+    /**测试路径基*/
+    public final static String TEST_BASE_PATH = "/Users/Fuzhong.Yan/resource/";
+    /**测试路径AZ基*/
+    public final static String TEST_BASE_PATH_AZ = TEST_BASE_PATH+"az";
+    /**测试路径输出基*/
+    public final static String TEST_BASE_PATH_OUT = TEST_BASE_PATH+"out";
 }

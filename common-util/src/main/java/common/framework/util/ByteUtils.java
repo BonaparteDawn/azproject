@@ -74,4 +74,31 @@ public class ByteUtils {
         System.arraycopy(data, 0, res, des.length, data.length);
         return res;
     }
+
+    /**
+     *
+     * @param bytes
+     * @param block_index(注意:第一块的起始下标为0,第二块为1)
+     * @param block_size(基于block_index开始读取指定长度的数据)
+     * @return
+     */
+    public static byte[] read(byte[] bytes,int block_index,int block_size){
+        if (bytes == null || block_index <0 || block_size<=0){
+            return null;
+        }
+        if (bytes.length < block_index*block_size){
+            return null;
+        }
+        int len = bytes.length;
+        int res_len = block_size;
+        if ((block_index+1)*block_size>len){
+            res_len = len - block_index*block_size;
+        }
+        if (res_len == 0){
+            return null;
+        }
+        byte[] res = new byte[res_len];
+        System.arraycopy(bytes,block_index*block_size,res,0,res_len);
+        return res;
+    }
 }

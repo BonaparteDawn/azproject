@@ -63,7 +63,7 @@
       <module name="common-db-util" target="1.5" />
       <module name="common-parent" target="1.5" />
       <module name="common-redis-util" target="1.5" />
-      <module name="common-util" target="1.5" />
+      <module name="common-util" target="1.7" />
       <module name="common_constant_util" target="1.5" />
       <module name="constant_util" target="1.5" />
       <module name="file-api" target="1.5" />

@@ -1,6 +1,6 @@
 package common.framework.util;
 
-import java.util.Random;
+import java.security.SecureRandom;
 import java.util.UUID;
 
 /**
@@ -14,9 +14,19 @@ public class RandomUtil {
     public static String generate32UUID(){
         return UUID.randomUUID().toString().replace("-", "");
     }
+    public static SecureRandom newInstance(){
+        SecureRandom secureRandom = null;
+        try {
+            secureRandom = SecureRandom.getInstance("SHA1PRNG", "SUN");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return secureRandom;
+    }
     public static int rand(){
-        Random random = new Random();
-        return random.nextInt();
+//        Random random = new Random();
+//        return random.nextInt();
+        return newInstance().nextInt();
     }
     /**
      * 生成闭区间的整数[0 max)
@@ -25,8 +35,9 @@ public class RandomUtil {
      * @throws Exception
      */
     public static int rand(int max){
-        Random random = new Random();
-        return random.nextInt(max);
+//        Random random = new Random();
+//        return random.nextInt(max);
+        return newInstance().nextInt(max);
     }
     /**
      * 生成闭区间的整数[min max]

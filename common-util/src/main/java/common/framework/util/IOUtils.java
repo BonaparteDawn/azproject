@@ -1,9 +1,9 @@
 package common.framework.util;
 
 import constant.AZ_Constant;
+import org.springframework.util.Assert;
 
 import java.io.*;
-import java.nio.Buffer;
 
 /**
  * Created by Fuzhong.Yan on 17/1/3.
@@ -213,5 +213,72 @@ public class IOUtils {
         }
         outputStream.close();
         return res;
+    }
+
+    /**
+     * 将数据流里面的数据全部读取出来
+     */
+    public static byte[] copy2Bytes(InputStream inputStream) throws IOException {
+        if (inputStream == null){
+            return null;
+        }
+        byte[] bytes = new byte[inputStream.available()];
+        inputStream.read(bytes);
+        return bytes;
+    }
+
+    /**
+     * 将字符写入器转换为缓冲字符写入器
+     * @param writer
+     * @return
+     * @throws IOException
+     */
+    public static BufferedWriter convert2Buffer(Writer writer) throws IOException{
+        Assert.notNull(writer, "fileUtil_writer_len0");
+        BufferedWriter bufferedWriter = null;
+        if (writer != null) {
+            bufferedWriter = new BufferedWriter(writer);
+        }
+        return bufferedWriter;
+    }
+    /**
+     * 将普通数据流转换为缓存数据流
+     * @return
+     * @throws IOException
+     */
+    public static BufferedOutputStream convert2Buffer(OutputStream outputStream) throws IOException{
+        Assert.notNull(outputStream, "fileUtil_outputStream_len0");
+        BufferedOutputStream bufferedOutputStream = null;
+        if (outputStream != null) {
+            bufferedOutputStream = new BufferedOutputStream(outputStream);
+        }
+        return bufferedOutputStream;
+    }
+    /**
+     * 将普通数据流转换为缓存数据流
+     * @param inputStream
+     * @return
+     * @throws IOException
+     */
+    public static BufferedInputStream convert2Buffer(InputStream inputStream) throws IOException{
+        Assert.notNull(inputStream, "fileUtil_inputStream_len0");
+        BufferedInputStream bufferedInputStream = null;
+        if (inputStream != null) {
+            bufferedInputStream = new BufferedInputStream(inputStream);
+        }
+        return bufferedInputStream;
+    }
+    /**
+     * 将字符阅读器转换为缓冲字符阅读器
+     * @return
+     * @throws IOException
+     */
+    public static BufferedReader convert2Buffer(Reader reader) throws IOException{
+        Assert.notNull(reader, "fileUtil_reader_len0");
+        BufferedReader bufferedReader = null;
+        if (reader != null) {
+            bufferedReader = new BufferedReader(reader);
+        }
+        return bufferedReader;
     }
 }

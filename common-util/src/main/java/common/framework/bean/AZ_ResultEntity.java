@@ -1,5 +1,6 @@
 package common.framework.bean;
 
+import common.framework.util.JsonUtil;
 import enums.AZ_ServerResponseCode;
 
 import java.util.HashMap;
@@ -14,15 +15,15 @@ public class AZ_ResultEntity {
     /**
      * 服务器唯一ID
      */
-    private  String server_uuid;
+    private  String server_uuid = "none";
     /**
      * 服务器称呼
      */
-    private  String server_name;
+    private  String server_name ="none";
     /**
      * 服务器响应码
      */
-    private AZ_ServerResponseCode status;
+    private AZ_ServerResponseCode status = AZ_ServerResponseCode.FAILED;
     /**
      * 客服端错误参数
      */
@@ -30,7 +31,23 @@ public class AZ_ResultEntity {
     /**
      * 服务器响应消息
      */
-    private  String message;
+    private  String message = "FAILED!";
+    public AZ_ResultEntity(){
+
+    }
+
+    public AZ_ResultEntity(AZ_ServerResponseCode status,String message){
+        this.status = status;
+        this.message = message;
+    }
+
+    public AZ_ResultEntity(String server_uuid,String server_name,AZ_ServerResponseCode status,String message){
+        this.status = status;
+        this.message = message;
+        this.server_uuid = server_uuid;
+        this.server_name = server_name;
+    }
+
     /**
      * 服务器返回数据
      */
@@ -85,5 +102,10 @@ public class AZ_ResultEntity {
 
     public void setData(Map<String, Object> data) {
         this.data = data;
+    }
+
+    @Override
+    public String toString() {
+        return JsonUtil.toJson(this);
     }
 }
